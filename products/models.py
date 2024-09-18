@@ -25,7 +25,7 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    wattage = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True)
+    wattage = models.IntegerField(null=True, blank=True)
     ease_of_use = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True)
     capacity = models.DecimalField(max_digits=4, decimal_places=1, null=True, blank=True)
     dimensions = models.CharField(max_length=254, null=True, blank=True)
