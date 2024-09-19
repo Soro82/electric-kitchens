@@ -29,6 +29,7 @@ class Product(models.Model):
     ease_of_use = models.DecimalField(max_digits=3, decimal_places=1, null=True, blank=True)
     capacity = models.DecimalField(max_digits=4, decimal_places=1, null=True, blank=True)
     dimensions = models.CharField(max_length=254, null=True, blank=True)
+    color = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.name
