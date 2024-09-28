@@ -1,45 +1,43 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none"></li>
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-4" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}?sort=capacity&direction=desc" class="dropdown-item ">By Capacity</a>
                 <a href="{% url 'products' %}?sort=wattage&direction=asc" class="dropdown-item ">By Wattage</a>
                 <a href="{% url 'products' %}?sort=ease_of_use&direction=desc" class="dropdown-item ">By Ease of Use</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=kettles" id="kettles-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-4" href="{% url 'products' %}?category=kettle" id="kettles-link" aria-haspopup="true" aria-expanded="false">
                 Kettles
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=microwaves" id="microwaves-link" aria-haspopup="true" aria-expanded="false">
-                Microwaves
+            <a class="logo-font font-weight-bold nav-link text-black mr-4" href="{% url 'products' %}?category=washing_machine" id="microwaves-link" aria-haspopup="true" aria-expanded="false">
+                Washing Machines
             </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=air_fryer" id="air-fryers-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-4" href="{% url 'products' %}?category=air_fryer" id="air-fryers-link" aria-haspopup="true" aria-expanded="false">
                 Air Fryers
             </a>
         </li>
 
         <li class="nav-item dropdown"></li>
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=coffee_machines" id="coffee-machines-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-4" href="{% url 'products' %}?category=coffee_machine" id="coffee-machines-link" aria-haspopup="true" aria-expanded="false">
                 Coffee Machines
             </a>
         </li>
