@@ -18,3 +18,31 @@ def wishlist(request):
     return render(
         request, 'wishlist/wishlist.html', {'wishlist': wishlist}
     )
+
+
+@login_required
+def add_to_wishlist(request, product_id):
+    """ Add a product to the user's Wishlist. """
+    product = get_object_or_404(Product, pk=product_id)
+    user = UserProfile.objects.get(user=request.user)
+
+    # Check if the product is already in the users wishlist
+    if Wishlist.objects.filter(
+        user=user,
+        product=product
+    ).exists():
+        messages.warning(
+            request, f'{product.name} is already in your Wishlist.')
+    else:
+        # create a new wishlist
+        wishlist = Wishlist.objects.create(
+            user=user, product=product)
+        messages.success(
+            request,
+            f'{wishlist.product.name} added to Wishlist successfully!'
+        )
+
+    # Redirect to the product detail page
+    return redirect(reverse('product_detail', args=[product_id]))
+
+    

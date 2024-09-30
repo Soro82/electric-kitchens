@@ -65,6 +65,11 @@
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-outline-black rounded-0 mt-2" data-product-id="{{ product.id }}">
+                            Add to Wishlist<i class="fas fa-heart mx-2"></i>
+                    </a>
+                    {% endif %}
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">

@@ -73,16 +73,14 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            
-                            <tr>
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg"></a>
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
+                        </table>
+                        <div class="row">
+                            <div class="col-12 offset-lg-8">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                     <span class="text-uppercase">Return to Products Page</span>
                                 </a>
-                            </tr>
-                        </table>
+                            </div>
+                        </div>
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your Wishlist is empty.</p>
