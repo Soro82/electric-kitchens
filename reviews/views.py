@@ -8,5 +8,14 @@ from profiles.models import UserProfile
 
 
 @login_required
-def reviews(request):
+def see_reviews(request):
     """ A view to show user reviews."""
+    reviews = Review.objects.filter(author=request.user)
+
+    template = 'reviews/reviews.html'
+
+    context = {
+        'reviews': reviews,
+    }
+
+    return render(request, template, context)
