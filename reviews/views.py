@@ -40,6 +40,7 @@ def add_review(request, product_id):
             if form.is_valid():
                 form.instance.author = request.user
                 form.instance.product = product
+                today = datetime.date.today()
                 form.save()
                 messages.success(request,
                                 'Your product review has been submitted')
@@ -86,3 +87,19 @@ def update_ratings(product):
         product.energy_efficency = total_energy_efficiency / num_reviews
 
     product.save()
+
+
+@login_required
+def delete_review(request, review_id):
+    """ Delete an existing review """
+    review = get_object_or_404(Review, pk=review_id)
+
+    if request.user != review.author:
+        messages.error(request, 'You are not authorized \
+            to delete this review.')
+        return redirect(reverse('product_detail', args=[review.product.id]))
+
+    review.delete()
+    messages.success(request, 'Your review has been deleted!')
+
+    return redirect(reverse('reviews'))
