@@ -1,0 +1,4 @@
+.review-content {
+    max-width: fit-content;
+    overflow-y: auto;
+}
