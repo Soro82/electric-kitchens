@@ -35,23 +35,23 @@ def add_review(request, product_id):
     #                    'You have already submitted a review for this product')
     #     return redirect(reverse('product_detail', args=[product.id]))
     # else:
-    #     if request.method == 'POST':
-    #         form = ReviewForm(request.POST)
-    #         if form.is_valid():
-    #             form.instance.author = request.user
-    #             form.instance.product = product
-    #             form.save()
-    #             messages.success(request,
-    #                              'Your product review has been submitted')
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            form.instance.author = request.user
+            form.instance.product = product
+            form.save()
+            messages.success(request,
+                             'Your product review has been submitted')
 
-    #             update_ratings(product)
+            update_ratings(product)
 
-    #             return redirect(reverse('product_detail', args=[product.id]))
-    #         else:
-    #             messages.error(request, 'Failed to submit the review. \
-    #                 Please ensure the form is valid.')
-    #     else:
-    #         form = ReviewForm()
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to submit the review. \
+                Please ensure the form is valid.')
+    else:
+        form = ReviewForm()
 
     template = 'reviews/add_review.html'
     context = {
