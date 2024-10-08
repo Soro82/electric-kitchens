@@ -323,10 +323,10 @@ footer ul {
     list-style: none;
 }
 
-footer li {
+/* footer li {
     display: inline;
     padding: 0 1rem;
-}
+} */
 
 /* Mailchimp CSS */
 #mc_embed_signup{
