@@ -319,14 +319,13 @@ body {
 }
 
 /* Footer */
-footer ul {
-    list-style: none;
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
 }
-
-/* footer li {
-    display: inline;
-    padding: 0 1rem;
-} */
 
 /* Mailchimp CSS */
 #mc_embed_signup{
