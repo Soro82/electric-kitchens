@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /profiles/
+Disallow: /checkout/
+Disallow: /admin/
+Sitemap: https://electric-kitchens-02035ecbc37c.herokuapp.com/sitemap.xml
