@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from datetime import date
 
 from .models import Review
 from products.models import Product
@@ -40,7 +41,6 @@ def add_review(request, product_id):
             if form.is_valid():
                 form.instance.author = request.user
                 form.instance.product = product
-                today = datetime.date.today()
                 form.save()
                 messages.success(request,
                                 'Your product review has been submitted')

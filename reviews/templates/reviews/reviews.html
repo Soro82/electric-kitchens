@@ -27,7 +27,7 @@
                 <div class="row">
                     {% if reviews %}
                     {% for review in reviews %}
-                        <div class="row">
+                        <div class="row w-100">
                             <div class="col-12 col-sm-6 col-lg-3 mb-2">
                                 <p class="mb-3"><strong>{{ review.product.name }}</strong></p>
                                 {% if review.product.image %}
@@ -38,7 +38,8 @@
                             </div>
                                 
                             <div class="col-12 col-sm-6 col-lg-3">
-                                <p class="my-1 review-content">Review: {{ review.content }}</p>
+                                <p class="my-1 review-content">Review:</p>
+                                <p class="my-1 review-content">{{ review.content }}</p>
                                 {% if review.purchase_date %}
                                     <small class="text-muted">Purchase Date: {{ review.purchase_date }}</small>
                                 {% endif %}
