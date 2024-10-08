@@ -317,3 +317,10 @@ body {
         padding: .25rem .5rem !important;
     }
 }
+
+/* Mailchimp CSS */
+#mc_embed_signup{
+    background:#fff;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    width: 600px;}
