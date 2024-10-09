@@ -15,6 +15,12 @@ def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)
+    empty_quantity = request.POST.get('quantity', '')
+
+    if not empty_quantity:
+        messages.error(request, 'Quantity can not be empty')
+        return redirect(request.POST.get("redirect_url", reverse("home")))
+
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
@@ -34,6 +40,12 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
+    empty_quantity = request.POST.get('quantity', '')
+
+    if not empty_quantity:
+        messages.error(request, 'Quantity can not be empty')
+        return redirect(reverse('view_bag'))
+
     quantity = int(request.POST.get('quantity'))
     
     bag = request.session.get('bag', {})
