@@ -318,6 +318,13 @@ body {
     }
 }
 
+/* Media queries for small mobile - under 375px */
+@media (max-width: 375px) {
+    .display-4.logo-font {
+        font-size: 1.5rem;
+    }
+}
+
 /* Footer */
 footer {
     left: 0;
