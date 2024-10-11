@@ -1,131 +1,165 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Electric Kitchens
 
-Welcome Gary Sorohan,
+Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live link.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Purpose
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+The purpose of this site is to allow users to purchase electric kitchen appliances. It allows them to easily navigate the site to find what they are looking for and to feel safe about making a purchase. Registered users can save their delivery information, leave reviews on products and add products to their wishlist.
 
-## Gitpod Reminders
+![Am I Responsive view of website](documentation/testing/other/am_i_responsive.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Contents
 
-`python3 -m http.server`
+### [User Experience](#user-experience-ux)
+* [Project Goals](#project-goals)
+* [Target Audience](#target-audience)
+* [New user](#new-user)
+* [Registered user](#registered-user)
+* [Admin user](#admin-user)
+### [Agile Methodology](#agile-methodology-1)
+* [Epics](#epics)
+* [User Stories](#user-stories)
+### [Design](#design-1)
+* [Color Scheme](#color-scheme)
+* [Typography](#typography)
+* [Wireframes](#wireframes)
+* [Database Scheme](#database-scheme)
+### [Features](#features-1)
+* [Security Features](#security-features)
+* [Existing Features](#existing-features)
+* [Future Features](#future-features)
+### [Technologies Used](#technologies-used-1)
+* [Languages Used](#languages-used)
+* [Databases Used](#databases-used)
+* [Frameworks Used](#frameworks-used)
+* [Programs Used](#programs-used)
+### [Testing](#testing-1)
+### [Deployment and Local developement](#deployment-and-local-development)
+* [Heroku Deployment](#heroku-deployment)
+* [Local Developement](#local-development)
+* [ElephantSQL Database](#elephantsql-database)
+### [References](#references-1)
+* [Credits](#credits)
+* [Acknowledgments](#acknowledgments)
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+### Project Goals
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+To allow users to:
+* Book horse riding lessons.
+* Create a personal account by signing up to the website.
+* Set up a username and password for their account.
+* Log in to their personal account.
+* Choose a date and time for their lesson.
+* Choose if they want their lesson indoor or outdoor.
+* Choose their level of experience.
+* Choose what horse they want for their lesson.
+* Make changes to any bookings they have made.
+* Delete a booking they made.
+* See all the horses available with a picture of the horse and their height and color.
+* See a list of available times for lessons.
+* See the three most popular horses.
+* Log out of their account.
+* See a message confirming they are logged out.
 
-A blue button should appear to click: _Make Public_,
+### Target Audience
+The website is designed to allow people to book horse riding lessons. They can choose the date and time for their lesson, whether they would like it indoor or outdoor, their level of experience and what horse they would like for their lesson. They also have the option to indicate if they are an adult or a child and to enter their height if they wish. With the CRUD (Create, Read, Update, Delete) functionality they can also view, edit and delete their bookings when they log into their account.
 
-Another blue button should appear to click: _Open Browser_.
+Each user has the ability to:
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### New User
+* View the lesson times available
+* See the three most popular horses
+* Access to the Horses page to see all available horses and their details
+* Register their own personal account
 
-To log into the Heroku toolbelt CLI:
+### Registered User
+* Login to their account
+* Make a booking
+* View their bookings
+* Update their bookings
+* Delete their bookings
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Admin User
+* Make a booking
+* View bookings for all users
+* Update bookings for all users
+* Delete bookings for all users
+* Add new horses to the website
+* Upload pictures of the horses
+* View details of all horses
+* Update details of all horses
+* Delete horses from the website
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+[Back to Top](#electric-kitchens)
 
-### Connecting your Mongo database
+## Agile Methodology
+* Agile Methodology was used for this project as it required a lot of planning.
+* The Kanban Board was created using GitHub. The link to the board is [here](https://github.com/users/Soro82/projects/2).
+* I used six milestones for the project, one for each Epic. 
+* The milestones helped to track my progress through the project. 
+* The User Stories were divided into three categories - must have, should have and could have. 
+* I used labels to categorize the user stories.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+### Epics
 
-------
+* Set up Project
+* Deployment
+* Navbar Links
+* User Registration
+* Book a Lesson
+* Add a Horses Page
 
-## Release History
+### User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Epic: Set up Project
 
-**June 18, 2024,** Add Mongo back into template
+* Create the project and book_lesson app
+* Create the database
+* Build the models
+* Create the views
+* Create the templates
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+#### Epic: Deployment
 
-**May 28 2024:** Fix Mongo and Links installs
+* Open a new Heroku application
+* Add required Config Vars
+* Set up a Procfile
+* Set DEBUG to False
 
-**April 26 2024:** Update node version to 16
+#### Epic: Navbar Links
 
-**September 20 2023:** Update Python version to 3.9.17.
+* Links in navbar to login, log out, sign up and make a booking
+* Log out and make a booking are disabled when no user is logged in
+* Logged in username displayed when a user is logged in
+* Burger icon replaces navbar on smaller screens
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Epic: User Registration
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Set up an account with a username, email and password
+* Enter my age and height when registering
+* See a message stating that I am logged in
+* Have a logout button visible
+* See a confirmation message when I logout
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Epic: Book a Lesson
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Choose a date for a lesson
+* Choose a time for a lesson
+* Choose whether I want indoor or outdoor
+* Choose my level of experience from a list of options
+* See a list of possible lesson times
+* See a confirmation message when I make a booking
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### Epic: Add a Horses Page
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* See pictures of each horse on a page
+* See details of each horse under their picture
+* Have a "Book Now" button available under each horse on the Horses page
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+[Back to Top](#electric-kitchens)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Design
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Color Scheme
