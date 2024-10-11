@@ -6,7 +6,7 @@ Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live 
 
 The purpose of this site is to allow users to purchase electric kitchen appliances. It allows them to easily navigate the site to find what they are looking for and to feel safe about making a purchase. Registered users can save their delivery information, leave reviews on products and add products to their wishlist.
 
-![Am I Responsive view of website](documentation/testing/other/am_i_responsive.png)
+![Am I Responsive view of website](documentation/testing/other/am-i-responsive.png)
 
 ## Table of Contents
 
@@ -96,67 +96,71 @@ Each user has the ability to:
 
 ## Agile Methodology
 * Agile Methodology was used for this project as it required a lot of planning.
-* The Kanban Board was created using GitHub. The link to the board is [here](https://github.com/users/Soro82/projects/2).
+* The Kanban Board was created using GitHub. The link to the board is [here](https://github.com/users/Soro82/projects/3).
 * I used six milestones for the project, one for each Epic. 
 * The milestones helped to track my progress through the project. 
 * The User Stories were divided into three categories - must have, should have and could have. 
 * I used labels to categorize the user stories.
+* I changed the "Approve Reviews" user story from "should have" to "won't have" as it was not required to complete the project.
 
 ### Epics
 
-* Set up Project
-* Deployment
-* Navbar Links
-* User Registration
-* Book a Lesson
-* Add a Horses Page
+* Viewing and Navigation
+* Registration and User Accounts
+* Sorting and Searching
+* Purchasing and Checkout
+* Admin and Store Management
+* Reviews and Wishlist
 
 ### User Stories
 
-#### Epic: Set up Project
+#### Epic: Viewing and Navigation
 
-* Create the project and book_lesson app
-* Create the database
-* Build the models
-* Create the views
-* Create the templates
+* View Products
+* View Product Details
+* Identify Deals
+* View my Total
 
-#### Epic: Deployment
+#### Epic: Registration and User Accounts
 
-* Open a new Heroku application
-* Add required Config Vars
-* Set up a Procfile
-* Set DEBUG to False
+* Register an Account
+* Login/Logout
+* Recover Password
+* Email Confirmation
+* User Profile
 
-#### Epic: Navbar Links
+#### Epic: Sorting and Searching
 
-* Links in navbar to login, log out, sign up and make a booking
-* Log out and make a booking are disabled when no user is logged in
-* Logged in username displayed when a user is logged in
-* Burger icon replaces navbar on smaller screens
+* Sort Products
+* Sort by Category
+* Sort Multiple Categories
+* Search for Products
+* View Search Results
 
-#### Epic: User Registration
+#### Epic: Purchasing and Checkout
 
-* Set up an account with a username, email and password
-* Enter my age and height when registering
-* See a message stating that I am logged in
-* Have a logout button visible
-* See a confirmation message when I logout
+* Select Quantity
+* View Bag
+* Adjust Bag
+* Enter Payment Information
+* Feel Safe and Secure
+* View Order Confirmation
+* Receive Email Confirmation
 
-#### Epic: Book a Lesson
+#### Epic: Admin and Store Management
 
-* Choose a date for a lesson
-* Choose a time for a lesson
-* Choose whether I want indoor or outdoor
-* Choose my level of experience from a list of options
-* See a list of possible lesson times
-* See a confirmation message when I make a booking
+* Add a Product
+* Edit/Update a Product
+* Delete a Product
+* Approve Reviews
 
-#### Epic: Add a Horses Page
+#### Epic: Reviews and Wishlist
 
-* See pictures of each horse on a page
-* See details of each horse under their picture
-* Have a "Book Now" button available under each horse on the Horses page
+* Review a Product
+* Remove Reviews
+* Add to Wishlist
+* View Wishlist
+* Update Wishlist
 
 [Back to Top](#electric-kitchens)
 
