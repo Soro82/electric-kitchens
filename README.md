@@ -47,21 +47,36 @@ The purpose of this site is to allow users to purchase electric kitchen applianc
 ### Project Goals
 
 To allow users to:
-* Book horse riding lessons.
-* Create a personal account by signing up to the website.
-* Set up a username and password for their account.
+* View the products available for purchase.
+* View the details of a product.
+* See their total purchase price at any time in the navbar.
+* Register for an account.
 * Log in to their personal account.
-* Choose a date and time for their lesson.
-* Choose if they want their lesson indoor or outdoor.
-* Choose their level of experience.
-* Choose what horse they want for their lesson.
-* Make changes to any bookings they have made.
-* Delete a booking they made.
-* See all the horses available with a picture of the horse and their height and color.
-* See a list of available times for lessons.
-* See the three most popular horses.
 * Log out of their account.
-* See a message confirming they are logged out.
+* Recover their password if they forget their password.
+* Receive an email confirmation when they register for an account.
+* View their profile page when logged in.
+* Save their delivery information.
+* View their delivery information on their profile page.
+* View their order history on their profile page.
+* Sort products by category.
+* Sort products by price, rating, wattage, ease of use or capacity.
+* Search for products in the search bar.
+* Select a quantity of an individual product to purchase.
+* Add a product to their shopping bag.
+* View their shopping bag at any time.
+* Update the quantity of an item in their shopping bag.
+* Remove a product from their shopping bag.
+* Enter their payment information.
+* Feel safe and secure when entering their payment information.
+* View a confirmation of their order.
+* Receive a confirmation email for each order submitted.
+* Review a product.
+* View the reviews they have made.
+* Remove a review that they made.
+* Add a product to their personal wishlist.
+* View their wishlist.
+* Remove a product from their wishlist.
 
 ### Target Audience
 The website is designed to allow people to book horse riding lessons. They can choose the date and time for their lesson, whether they would like it indoor or outdoor, their level of experience and what horse they would like for their lesson. They also have the option to indicate if they are an adult or a child and to enter their height if they wish. With the CRUD (Create, Read, Update, Delete) functionality they can also view, edit and delete their bookings when they log into their account.
