@@ -182,3 +182,77 @@ Each user has the ability to:
 ## Design
 
 ### Color Scheme
+
+## Technologies Used
+
+### Languages Used
+* HTML5
+* CSS
+* JavaScript
+* Python
+
+### Frameworks Used
+* Django - https://www.djangoproject.com
+* Bootstrap v4.1 - https://getbootstrap.com
+
+### Programs Used
+* GitHub - to host the source code.
+* GitPod - IDE used to develop the website.
+* Heroku - to deploy the project.
+* W3C Markup Validation Service - to validate the HTML code.
+* W3C CSS Validation Service - to validate the CSS code.
+* JSHint - to validate the JavaScript code.
+* CI Pep8 Python Validator - to validate the Python code.
+* Am I Responsive - to test the website's responsiveness.
+
+
+[Back to Top](#electric-kitchens)
+
+## Testing
+
+Click [here](TESTING.md) to open the Testing section.
+
+## Deployment and Local Development
+
+### Heroku Deployment
+
+The website was deployed using [Heroku](https://www.heroku.com/) through the following steps.
+
+1. Log in to Heroku or create an account if necessary.
+2. Click on the button labeled "New" from the dashboard in the top right corner and select the "Create new app" option in the drop-down menu.
+3. Enter a unique name for the application and select the region you are in.
+4. Click on "create app".
+5. Navigate to the settings tab and locate the "Config Vars" section and click "Reveal config vars".
+6. To add a config var:
+   * In the "KEY" field - enter the KEY name in all capital letters.
+   * In the "VALUE" field - enter the actual key and click "Add".
+8. Scroll to the "Buildpacks" section and click "Add buildpack".
+9. Select Python and save changes.
+12. Navigate to the "Deploy" section by clicking the "Deploy" tab in the top navbar.
+13. Select "GitHub" as the deployment method and click "Connect to GitHub".
+14. Search for the GitHub repository name in the search bar.
+15. Click on "connect" to link the repository to Heroku.
+16. Scroll down and click on "Deploy Branch".
+17. Once the app is deployed, Heroku will notify you and provide a button to view the app.
+
+Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live link.
+
+### Local Development
+
+#### Forking
+
+Forking is a way to make a copy of the original repository on your GitHub account to view and change without affecting the original repository.
+
+* Log in to GitHub and locate your GitHub Repository.
+* At the top of the Repository(under the main navigation) locate the "Fork" button.
+* Now you should have a copy of the original repository in your GitHub account.
+
+#### Cloning
+
+* Log in to GitHub and locate the GitHub Repository.
+* Under the repository name click "Clone or download".
+* Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+* Open Git Bash.
+* Change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone and then paste The URL copied in step 3.
+* Press Enter and your local clone will be created.
