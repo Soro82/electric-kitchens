@@ -344,19 +344,16 @@ Click [here](README.md) to return to the readme file.
 ### Bugs
 
 #### Fixed Bugs
-| Bug | Solution | Result |
-| :-: | :------: | :----: |
-| User able to double book a horse | Validate if booking exits | Pass |
-| User able to double book a time | Validate if booking time exits | Pass |
-| Multiple bookings for same time and date | Validate if booking is full | Pass |
-| User able to book previous date to today | Validate booking date | Pass |
-| Booking time displayed as integer | booking.get_lesson_time_display | Pass |
-| Two users unable to book the same time | Check user against request.user | Pass |
-| Navbar dropdown causing page scrollbar | Add "me-lg-4" class | Pass |
-| My Bookings in order of date but not time | Order by date and time | Pass |
-| Insecure Requests error in console | cloudinary.config(secure = True) | Pass |
-| Unable to change location in edit booking | add validation check on location | Pass |
-| Unable to change experience in edit booking | add validation check on experience | Pass |
+| Location | Bug | Solution | Result |
+| :------: | :-: | :------: | :----: |
+| Product Detail Page | User able to delete quantity and click Add to Bag | Validate if quantity is null | Pass |
+| Shopping Bag Page | User able to delete quantity and click Add to Bag | Validate if quantity is null | Pass |
+| Shopping Bag Page | Minus button not disabled on large screens | Add data-item-id | Pass |
+| Add Review Page | User able to choose a future date | Validate if date is in future | Pass |
+| Stripe Webhook handler | Payment_intent_succeeded not working | import Stripe | Pass |
+| Checkout Page | Order Confirmation not sending to user's email | Add runtime.txt | Pass |
+| Product Detail Page | Add to Bag button crashing site | Remove extra form closing tag | Pass |
+| Navbar | Navbar toggler not working | Remove extra div closing tag | Pass |
 
 #### Unfixed Bugs
 * There are no unfixed bugs.
