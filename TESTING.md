@@ -290,6 +290,50 @@ Click [here](README.md) to return to the readme file.
 |  | No password entered | Please fill in this field | Pass |
 |  | No username entered | Please fill in this field | Pass |
 |  | Enter valid username and password | Successfully logged in message | Pass |
+| Product Detail Page | Delete quantity and click Add to Bag | Error message displayed | Pass |
+|  | Change quantity to 1 | Minus button disabled | Pass |
+|  | Change quantity to 2 | Minus button enabled | Pass |
+|  | Change quantity to 99 | Plus button disabled | Pass |
+|  | Change quantity to 98 | Plus button enabled | Pass |
+|  | Click on Keep Shopping | Opens the All Products page | Pass |
+|  | Click on Add Review | Opens the Add Review page | Pass |
+|  | Click on Add to Wishlist | Product added to my wishlist | Pass |
+|  | Click on Add to Wishlist | Confirmation message displayed | Pass |
+|  | Click on Add to Bag | Product added to shopping bag | Pass |
+|  | Click on Add to Bag | Success Added to bag message displayed | Pass |
+|  | Click on Add to Bag | Shopping bag displayed in message box with product in it | Pass |
+| Shopping Bag in message box | Click on Go to Secure Checkout | Opens the Shopping Bag page | Pass |
+| Shopping Bag Page | Change quantity and click Update | Subtotal updates | Pass |
+|  | Change quantity and click Update | Bag Total and Grand Total updates | Pass |
+|  | Change quantity to 1 | Minus button disabled | Pass |
+|  | Change quantity to 2 | Minus button enabled | Pass |
+|  | Change quantity to 99 | Plus button disabled | Pass |
+|  | Change quantity to 98 | Plus button enabled | Pass |
+|  | Click on Remove button | Product removed from shopping bag | Pass |
+|  | Click on Remove button | Bag Total and Grand Total updates | Pass |
+|  | Click on Keep Shopping | Opens the All Products page | Pass |
+|  | Click on Secure Checkout | Opens the All Checkout page | Pass |
+| Checkout Page | Click on Adjust Bag | Opens the Shopping Bag page | Pass |
+|  | Tick the Save box and click on Complete Order | Delivery Information saved | Pass |
+|  | Click on Complete Order | Loading spinner displayed | Pass |
+|  | Click on Complete Order | Order Confirmation message displayed | Pass |
+|  | Click on Complete Order | Opens Order Confirmation page | Pass |
+|  | Required field not filled in | Please fill in this field displayed | Pass |
+|  | Incorrect card details entered | Error message displayed | Pass |
+| Add Review Page | Required field not filled in | Please fill in this field displayed | Pass |
+|  | Future date picked for Date of Purchase | Correct Error message displayed | Pass |
+|  | Click on Cancel button | Opens the All Products page | Pass |
+| My Reviews Page | Click on Keep Shopping | Opens the All Products page | Pass |
+|  | Click on Remove Review | Review deleted | Pass |
+| My Wishlist Page | Click on Return to Products Page | Opens the All Products page | Pass |
+|  | Click on Remove From Wishlist | Product deleted from Wishlist | Pass |
+| Home Page | Click on Shop Now | Opens All Products page | Pass |
+| My Profile Page | Change details and click Update Information | Information Updated | Pass |
+|  | Click on Order Number in Order History | Opens Order Confirmation page | Pass |
+| Footer | Click on Facebook link | Opens Electric Kitchens Facebook page | Pass |
+|  | Click on Order Home link | Opens Home page | Pass |
+|  | Click on Products link | Opens All Products page | Pass |
+|  | Click on Privacy Policy link | Opens Privacy Policy page | Pass |
 | 404 Error Page | Enter incorrect URL | 404 Error Page opens | Pass |
 |  | Click on Take Me Home | Returns to Home Page | Pass |
 | 500 Error Page | Admin raises an exception | 500 Error Page opens | Pass |
