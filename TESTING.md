@@ -255,62 +255,41 @@ Click [here](README.md) to return to the readme file.
 
 | Location | Test | Expected Result | Result |
 | :------: | :--: | :-------------: | :----: |
-| Navbar | Click on Login | Opens the login page | Pass |
-|  | Click on Sign Up | Opens the signup page | Pass |
-|  | Click on Horses | Opens the horses page | Pass |
+| Navbar | Click on My Account | Opens the dropdown menu | Pass |
+| Navbar/My Account | Click on Login | Opens the login page | Pass |
+|  | Click on Register | Opens the signup page | Pass |
 |  | Click on Logout | Opens the logout page | Pass |
+|  | User Logged In | My Reviews link in My Account | Pass |
+|  | Admin User Logged In | Product Management link in My Account | Pass |
+| Navbar | User Logged In | My Wishlist link beside My Account link | Pass |
+|  | Click on Shopping Bag | Opens the shopping bag page | Pass |
 |  | Click on Heading in navbar | Opens the home page | Pass |
-|  | User Logged In | Sign Up and Login links change to User's name | Pass |
-|  | User Logged Out | User's name link change to Sign Up and Login | Pass |
-| Popular Horses | Click on Login | Opens the login page | Pass |
-|  | Click on Book Now | Opens the booking page | Pass |
-|  | User Logged In | Book Now button displayed | Pass |
-|  | User Logged Out | Login button displayed | Pass |
-| Horses Page | Click on Login | Opens the login page | Pass |
-|  | Click on Next | Display next 3 horses | Pass |
-|  | Click on Previous | Display previous 3 horses | Pass |
-|  | Click on Book Now | Opens the booking page | Pass |
-|  | User Logged In | Book Now button displayed | Pass |
-|  | User Logged Out | Login button displayed | Pass |
+|  | Use Search bar to search for "kettle" | Show all Kettles | Pass |
+|  | Use Search bar to search for "filter" | Show all products with filters | Pass |
+|  | Click on Kettles | Opens the Kettles page | Pass |
+|  | Click on Washing Machines | Opens the Washing Machines page | Pass |
+|  | Click on Air Fryers | Opens the Air Fryers page | Pass |
+|  | Click on Coffee Machines | Opens the Coffee Machines page | Pass |
+|  | Click on All Products | Opens the All Products dropdown menu | Pass |
+| Navbar/All Products | Click on All Products | Opens the All Products page | Pass |
+|  | Click on By Price | Shows all products in order of price | Pass |
+|  | Click on By Rating | Shows all products in order of rating | Pass |
+|  | Click on By Wattage | Shows all products in order of wattage | Pass |
+|  | Click on By Ease of Use | Shows all products in order of ease of use | Pass |
+| All Products/Sort By | Click on Price(low to high) | Sorts all products in order of price starting with the cheapist | Pass |
+|  | Click on Price(high to low) | Sorts all products in order of price starting with the most expensive | Pass |
+|  | Click on Rating(low to high) | Sorts all products in order of rating starting with the lowest | Pass |
+|  | Click on Rating(high to low) | Sorts all products in order of rating starting with the highest | Pass |
+|  | Click on Capacity(low to high) | Sorts all products in order of Capacity starting with the lowest | Pass |
+|  | Click on Capacity(high to low) | Sorts all products in order of Capacity starting with the highest | Pass |
+|  | Click on Category(A to Z) | Sorts all products in order of Category starting with Air Fryers | Pass |
+|  | Click on Category(Z to A) | Sorts all products in order of Category starting with Washing Machines | Pass |
 | Login Page | Enter invalid username | Error message displayed | Pass |
 |  | Enter invalid password | Error message displayed | Pass |
 |  | Click on Sign Up | Opens the signup page | Pass |
 |  | No password entered | Please fill in this field | Pass |
 |  | No username entered | Please fill in this field | Pass |
 |  | Enter valid username and password | Successfully logged in message | Pass |
-| Booking Page |  | Horse name displayed above Lesson Date field | Pass |
-|  | No date entered | Please fill in this field | Pass |
-|  | Date earlier than today | Correct Error message displayed | Pass |
-|  | Date earlier than today | Message fades away after 3 seconds | Pass |
-|  | Date and time already booked | Correct Error message displayed | Pass |
-|  | Date and time already booked | Message fades away after 3 seconds | Pass |
-|  | Two users book same lesson date and time | Booking Confirmed | Pass |
-|  | Horse already booked | Correct Error message displayed | Pass |
-|  | Horse already booked | Message fades away after 3 seconds | Pass |
-|  | Lesson fully booked | Correct Error message displayed | Pass |
-|  | Lesson fully booked | Message fades away after 3 seconds | Pass |
-|  | Click on Submit | Confirmation Message displayed | Pass |
-|  | Click on Submit | Message fades away after 3 seconds | Pass |
-|  | Click on Submit | Form fields cleared | Pass |
-| My Bookings Page | Click on Edit | Opens the edit booking page | Pass |
-|  | Click on Delete | Opens the delete booking page | Pass |
-| Edit Booking Page |  | Horse name displayed above Lesson Date field | Pass |
-|  | No date entered | Please fill in this field | Pass |
-|  | Date earlier than today | Correct Error message displayed | Pass |
-|  | Date earlier than today | Message fades away after 3 seconds | Pass |
-|  | Date and time already booked | Correct Error message displayed | Pass |
-|  | Date and time already booked | Message fades away after 3 seconds | Pass |
-|  | Horse already booked | Correct Error message displayed | Pass |
-|  | Horse already booked | Message fades away after 3 seconds | Pass |
-|  | Lesson fully booked | Correct Error message displayed | Pass |
-|  | Lesson fully booked | Message fades away after 3 seconds | Pass |
-|  | Click on Update Booking | Confirmation Message displayed | Pass |
-|  | Click on Update Booking | Message fades away after 3 seconds | Pass |
-|  | Click on Update Booking | Return to bookings page | Pass |
-| Delete Booking Page | Click on Confirm Delete | Booking deleted | Pass |
-|  | Click on Confirm Delete | Confirmation Message displayed | Pass |
-|  | Click on Confirm Delete | Message fades away after 3 seconds | Pass |
-|  | Click on Confirm Delete | Return to bookings page | Pass |
 | 404 Error Page | Enter incorrect URL | 404 Error Page opens | Pass |
 |  | Click on Take Me Home | Returns to Home Page | Pass |
 | 500 Error Page | Admin raises an exception | 500 Error Page opens | Pass |
