@@ -173,16 +173,16 @@ Click [here](README.md) to return to the readme file.
 </details>
 
 <details>
-<summary>Horses Page</summary>
+<summary>All Products Page</summary>
 
-![Horses Page Lighthouse Testing](documentation/testing/lighthouse/horses_page.png)
+![Horses Page Lighthouse Testing](documentation/testing/lighthouse/all_products.png)
 
 </details>
 
 <details>
-<summary>Sign Up Page</summary>
+<summary>Product Detail Page</summary>
 
-![Sign Up Page Lighthouse Testing](documentation/testing/lighthouse/sign_up.png)
+![Sign Up Page Lighthouse Testing](documentation/testing/lighthouse/product_detail.png)
 
 </details>
 
@@ -194,33 +194,60 @@ Click [here](README.md) to return to the readme file.
 </details>
 
 <details>
-<summary>Make Booking Page</summary>
+<summary>Register an Account Page</summary>
 
-![Make Booking Page Lighthouse Testing](documentation/testing/lighthouse/make_booking.png)
-
-</details>
-
-<details>
-<summary>My Booking Page</summary>
-
-![My Booking Page Lighthouse Testing](documentation/testing/lighthouse/my_bookings.png)
+![Make Booking Page Lighthouse Testing](documentation/testing/lighthouse/signup.png)
 
 </details>
 
 <details>
-<summary>Edit Booking Page</summary>
+<summary>My Profile Page</summary>
 
-![Edit Booking Page Lighthouse Testing](documentation/testing/lighthouse/edit_booking.png)
+![My Booking Page Lighthouse Testing](documentation/testing/lighthouse/my_profile.png)
 
 </details>
 
 <details>
-<summary>Sign Out Page</summary>
+<summary>My Reviews Page</summary>
 
-![Sign Out Page Lighthouse Testing](documentation/testing/lighthouse/sign_out.png)
+![My Booking Page Lighthouse Testing](documentation/testing/lighthouse/my_reviews.png)
 
 </details>
 
+<details>
+<summary>My Wishlist Page</summary>
+
+![My Booking Page Lighthouse Testing](documentation/testing/lighthouse/my_wishlist.png)
+
+</details>
+
+<details>
+<summary>Shopping Bag Page</summary>
+
+![Edit Booking Page Lighthouse Testing](documentation/testing/lighthouse/shopping_bag.png)
+
+</details>
+
+<details>
+<summary>Checkout Page</summary>
+
+![Sign Out Page Lighthouse Testing](documentation/testing/lighthouse/checkout_page.png)
+
+</details>
+
+<details>
+<summary>Order Confirmation Page</summary>
+
+![Sign Out Page Lighthouse Testing](documentation/testing/lighthouse/order_confirmation.png)
+
+</details>
+
+<details>
+<summary>Add Review Page</summary>
+
+![Sign Out Page Lighthouse Testing](documentation/testing/lighthouse/add_review.png)
+
+</details>
 
 [Back to Top](#testing)
 
