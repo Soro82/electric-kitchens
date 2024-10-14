@@ -43,7 +43,7 @@ def add_review(request, product_id):
                 form.instance.product = product
                 form.save()
                 messages.success(request,
-                                'Your product review has been submitted')
+                                 'Your product review has been submitted')
 
                 update_ratings(product)
 

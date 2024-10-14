@@ -46,7 +46,6 @@ def add_to_wishlist(request, product_id):
     return redirect(reverse('product_detail', args=[product_id]))
 
 
-
 @login_required
 def remove_from_wishlist(request, product_id):
     """ Remove a product from the user's Wishlist. """
@@ -54,7 +53,7 @@ def remove_from_wishlist(request, product_id):
     user = UserProfile.objects.get(user=request.user)
 
     wishlist_product = Wishlist.objects.get(user=user,
-                                         product=product)
+                                            product=product)
     wishlist_product.delete()
     messages.success(request, f'{product.name} has been successfully removed.')
     return redirect(reverse('wishlist'))

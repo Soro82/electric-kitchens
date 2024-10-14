@@ -9,8 +9,8 @@ class Wishlist(models.Model):
     A Model to store a user's favourite items.
     """
     user = models.ForeignKey(UserProfile, null=False,
-                                blank=False, on_delete=models.CASCADE,
-                                related_name='wishlist')
+                             blank=False, on_delete=models.CASCADE,
+                             related_name='wishlist')
     product = models.ForeignKey(Product, null=False,
                                 blank=False, on_delete=models.CASCADE)
 
