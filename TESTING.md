@@ -364,55 +364,68 @@ Click [here](README.md) to return to the readme file.
 
 #### Home Page
 
-![Home Page](documentation/screenshots/desktop/home_logged_out.png)
+![Home Page](documentation/screenshots/desktop/home_page_desktop.png)
 
-![Home Page Tablet](documentation/screenshots/tablet/home_page.png) ![Home Page Mobile](documentation/screenshots/mobile/home_logged_in.png)
-#### Navbar
+![Home Page Tablet](documentation/screenshots/tablet/home_page_tablet.png) ![Home Page Mobile](documentation/screenshots/mobile/home_page_mobile.png)
 
-![Navbar](documentation/screenshots/desktop/navbar_logged_out.png)
+#### All Products Page
 
-![Navbar Tablet](documentation/screenshots/tablet/navbar.png) ![Navbar Mobile](documentation/screenshots/mobile/navbar.png)
+![Navbar](documentation/screenshots/desktop/all_products_desktop.png)
 
-#### Popular Horses
+![Navbar Tablet](documentation/screenshots/tablet/all_products_tablet.png) ![Navbar Mobile](documentation/screenshots/mobile/all_products_mobile.png)
 
-![Popular Horses](documentation/screenshots/desktop/popular_horses_logged_in.png)
+#### Product Details Page
 
-![Popular Horses Tablet](documentation/screenshots/tablet/popular_horses.png) ![Popular Horses Mobile](documentation/screenshots/mobile/popular_horses_logged_in.png)
+![Popular Horses](documentation/screenshots/desktop/product_detail_desktop.png)
 
-#### Horses Page
+![Popular Horses Tablet](documentation/screenshots/tablet/product_detail_tablet.png) ![Popular Horses Mobile](documentation/screenshots/mobile/product_detail_bottom_mobile.png)
 
-![Horses Page](documentation/screenshots/desktop/horses_logged_out.png)
+#### Shopping Bag Page
 
-![Horses Page Tablet](documentation/screenshots/tablet/horses_page.png) ![Horses Page Mobile](documentation/screenshots/mobile/horses_page.png)
+![Horses Page](documentation/screenshots/desktop/shopping_bag_desktop.png)
 
-#### Make Booking Page
+![Horses Page Tablet](documentation/screenshots/tablet/shopping_bag_tablet.png) ![Horses Page Mobile](documentation/screenshots/mobile/shopping_bag_bottom_mobile.png)
 
-![Make Booking Page Desktop](documentation/screenshots/desktop/make_booking.png)
+#### Checkout Page
 
-![Make Booking Page Tablet](documentation/screenshots/tablet/make_booking.png) ![Make Booking Page Mobile](documentation/screenshots/mobile/make_booking.png)
+![Make Booking Page Desktop](documentation/screenshots/desktop/checkout_page_top.png)
 
-#### My Bookings Page
+![Make Booking Page Tablet](documentation/screenshots/tablet/checkout_page_tablet.png) ![Make Booking Page Mobile](documentation/screenshots/mobile/checkout_top_mobile.png)
 
-![My Bookings Page](documentation/screenshots/desktop/my_bookings.png)
+#### My Reviews Page
 
-![My Bookings Page Tablet](documentation/screenshots/tablet/my_bookings.png) ![My Bookings Page Mobile](documentation/screenshots/mobile/my_bookings.png)
+![My Bookings Page](documentation/screenshots/desktop/my_reviews_desktop.png)
 
-#### Delete Booking Page
+![My Bookings Page Tablet](documentation/screenshots/tablet/my_reviews_tablet.png) ![My Bookings Page Mobile](documentation/screenshots/mobile/my_reviews_mobile.png)
 
-![Delete Booking Page](documentation/screenshots/desktop/delete_confirmation.png)
+#### My Wishlist Page
 
-![Delete Booking Page Tablet](documentation/screenshots/tablet/delete_booking.png) ![Delete Booking Page Mobile](documentation/screenshots/mobile/delete_booking.png)
+![Delete Booking Page](documentation/screenshots/desktop/my_wishlist_desktop.png)
+
+![Delete Booking Page Tablet](documentation/screenshots/tablet/my_wishlist_tablet.png) ![Delete Booking Page Mobile](documentation/screenshots/mobile/my_wishlist_mobile.png)
 
 #### Login Page
 
-![Login Page Desktop](documentation/screenshots/desktop/login.png)
+![Login Page Desktop](documentation/screenshots/desktop/login_desktop.png)
 
-![Login Page Tablet](documentation/screenshots/tablet/sign_in.png) ![Login Page Mobile](documentation/screenshots/mobile/login.png)
+![Login Page Tablet](documentation/screenshots/tablet/login_tablet.png) ![Login Page Mobile](documentation/screenshots/mobile/login_mobile.png)
+
+#### Register an Account Page
+
+![Login Page Desktop](documentation/screenshots/desktop/register_desktop.png)
+
+![Login Page Tablet](documentation/screenshots/tablet/register_tablet.png) ![Login Page Mobile](documentation/screenshots/mobile/register_mobile.png)
+
+#### Add to Bag Message
+
+![Login Page Desktop](documentation/screenshots/desktop/add_to_bag_success_message.png)
+
+![Login Page Tablet](documentation/screenshots/tablet/add_to_bag_message_tablet.png) ![Login Page Mobile](documentation/screenshots/mobile/add_to_bag_message_mobile.png)
 
 #### Footer
 
-![Footer](documentation/screenshots/desktop/footer.png)
+![Footer](documentation/screenshots/desktop/footer_desktop.png)
 
-![Footer Mobile](documentation/screenshots/mobile/footer.png)
+![Footer Mobile](documentation/screenshots/mobile/footer_mobile.png)
 
 [Back to Top](#testing)
