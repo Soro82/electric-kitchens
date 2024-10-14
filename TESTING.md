@@ -22,147 +22,144 @@ Click [here](README.md) to return to the readme file.
 </details>
 
 <details>
-<summary>Horses Page</summary>
+<summary>All Products Page</summary>
 
-![Horses Page HTML Validation](documentation/testing/html/horses_page.png)
+![Horses Page HTML Validation](documentation/testing/html/all_products.png)
 
 </details>
 
 <details>
-<summary>Horses Page Logged In</summary>
+<summary>Product Detail Page</summary>
 
-![Horses Page Logged In HTML Validation](documentation/testing/html/horses_page_logged_in.png)
+![Horses Page Logged In HTML Validation](documentation/testing/html/product_detail.png)
+
+</details>
+
+<details>
+<summary>Checkout Page</summary>
+
+![Login Page HTML Validation](documentation/testing/html/checkout_page.png)
+
+</details>
+
+<details>
+<summary>Shopping Bag Page</summary>
+
+![Make Booking Page HTML Validation](documentation/testing/html/shopping_bag.png)
+
+</details>
+
+<details>
+<summary>My Profile Page</summary>
+
+![My Booking Page HTML Validation](documentation/testing/html/my_profile.png)
+
+</details>
+
+<details>
+<summary>My Reviews Page</summary>
+
+![Edit Booking Page HTML Validation](documentation/testing/html/my_reviews.png)
+
+</details>
+
+<details>
+<summary>My Wishlist Page</summary>
+
+![Delete Booking Page HTML Validation](documentation/testing/html/my_wishlist.png)
 
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page HTML Validation](documentation/testing/html/login_page.png)
+![404 Error Page HTML Validation](documentation/testing/html/login_page.png)
 
 </details>
 
 <details>
-<summary>Make Booking Page</summary>
+<summary>Logout Page</summary>
 
-![Make Booking Page HTML Validation](documentation/testing/html/make_booking.png)
-
-</details>
-
-<details>
-<summary>My Booking Page</summary>
-
-![My Booking Page HTML Validation](documentation/testing/html/my_bookings.png)
+![500 Error Page HTML Validation](documentation/testing/html/logout_page.png)
 
 </details>
 
 <details>
-<summary>Edit Booking Page</summary>
+<summary>Register an Account Page</summary>
 
-![Edit Booking Page HTML Validation](documentation/testing/html/edit_booking.png)
-
-</details>
-
-<details>
-<summary>Delete Booking Page</summary>
-
-![Delete Booking Page HTML Validation](documentation/testing/html/delete_booking.png)
+![500 Error Page HTML Validation](documentation/testing/html/register_page.png)
 
 </details>
 
 <details>
-<summary>404 Error Page</summary>
+<summary>Product Management Page</summary>
 
-![404 Error Page HTML Validation](documentation/testing/html/404_page.png)
-
-</details>
-
-<details>
-<summary>500 Error Page</summary>
-
-![500 Error Page HTML Validation](documentation/testing/html/500_page.png)
+![500 Error Page HTML Validation](documentation/testing/html/product_management.png)
 
 </details>
 
 #### Python Validation
 
-* book_lesson app
+| App Name | views.py | urls.py | models.py | forms.py | admin.py |
+| :------: | :------: | :-----: | :-------: | :------: | :------: |
+| Checkout | ![N/A](documentation/testing/python/checkout/python_validation_checkout_views.png) | ![N/A](documentation/testing/python/checkout/python_validation_checkout_urls.png) | ![N/A](documentation/testing/python/checkout/python_validation_checkout_models.png) | ![N/A](documentation/testing/python/checkout/python_validation_checkout_forms.png) | ![N/A](documentation/testing/python/checkout/python_validation_checkout_admin.png) |
+| Products | ![N/A](documentation/testing/python/products/python_validation_products_views.png) | ![N/A](documentation/testing/python/products/python_validation_products_urls.png) | ![N/A](documentation/testing/python/products/python_validation_products_models.png) | ![N/A](documentation/testing/python/products/python_validation_products_forms.png) | ![N/A](documentation/testing/python/products/python_validation_products_admin.png) |
+| Profiles | ![N/A](documentation/testing/python/profiles/python_validation_profiles_views.png) | ![N/A](documentation/testing/python/profiles/python_validation_profiles_urls.png) | ![N/A](documentation/testing/python/profiles/python_validation_profiles_models.png) | ![N/A](documentation/testing/python/profiles/python_validation_profiles_forms.png) | N/A |
+| Reviews | ![N/A](documentation/testing/python/reviews/python_validation_reviews_views.png) | ![N/A](documentation/testing/python/reviews/python_validation_reviews_urls.png) | ![N/A](documentation/testing/python/reviews/python_validation_reviews_models.png) | ![N/A](documentation/testing/python/reviews/python_validation_reviews_forms.png) | ![N/A](documentation/testing/python/reviews/python_validation_reviews_admin.png) |
+| Wishlist | ![N/A](documentation/testing/python/wishlist/python_validation_wishlist_views.png) | ![N/A](documentation/testing/python/wishlist/python_validation_wishlist_urls.png) | ![N/A](documentation/testing/python/wishlist/python_validation_wishlist_models.png) | N/A | ![N/A](documentation/testing/python/wishlist/python_validation_wishlist_admin.png) |
+| Bag | ![N/A](documentation/testing/python/bag/python_validation_bag_views.png) | ![N/A](documentation/testing/python/bag/python_validation_bag_urls.png) | N/A | N/A | N/A |
+| Electric Kitchens | ![N/A](documentation/testing/python/python_validation_views.png) | ![N/A](documentation/testing/python/python_validation_urls.png) | settings.py ![N/A](documentation/testing/python/python_validation_settings.png) | N/A | N/A |
 
 <details>
-<summary>admin.py</summary>
+<summary>Checkout signals.py</summary>
 
-![admin.py Python Validation](documentation/testing/python/admin_validation.png)
+![style.css CSS Validation](documentation/testing/python/checkout/python_validation_checkout_signals.png)
 
 </details>
 
 <details>
-<summary>forms.py</summary>
+<summary>Checkout webhook_handler.py</summary>
 
-![forms.py Python Validation](documentation/testing/python/forms_validation.png)
-
-</details>
-
-<details>
-<summary>models.py</summary>
-
-![models.py Python Validation](documentation/testing/python/models_validation.png)
+![style.css CSS Validation](documentation/testing/python/checkout/python_validation_checkout_webhook_handler.png)
 
 </details>
 
 <details>
-<summary>urls.py</summary>
+<summary>Checkout webhooks.py</summary>
 
-![urls.py Python Validation](documentation/testing/python/urls_validation.png)
-
-</details>
-
-<details>
-<summary>views.py</summary>
-
-![views.py Python Validation](documentation/testing/python/views_validation.png)
-
-</details>
-
-* horse_riding_lessons
-
-<details>
-<summary>settings.py</summary>
-
-![settings.py Python Validation](documentation/testing/python/settings_validation.png)
-
-</details>
-
-<details>
-<summary>urls.py</summary>
-
-![urls.py Python Validation](documentation/testing/python/project_urls_validation.png)
+![style.css CSS Validation](documentation/testing/python/checkout/python_validation_checkout_webhooks.png)
 
 </details>
 
 #### CSS Validation
 
 <details>
-<summary>style.css</summary>
+<summary>base.css</summary>
 
-![style.css CSS Validation](documentation/testing/other/css_validation.png)
+![style.css CSS Validation](documentation/testing/other/css_validation_base.png)
+
+</details>
+
+<details>
+<summary>profile.css</summary>
+
+![style.css CSS Validation](documentation/testing/other/css_validation_profile.png)
+
+</details>
+
+<details>
+<summary>checkout.css</summary>
+
+![style.css CSS Validation](documentation/testing/other/css_validation_checkout.png)
 
 </details>
 
 #### JavaScript Validation
 
 <details>
-<summary>script.js</summary>
+<summary>stripe_elements.js</summary>
 
-![script.js JavaScript Validation](documentation/testing/other/javascript_validation.png)
-
-</details>
-
-#### WAVE Validation
-
-<details>
-<summary>WAVE Validation</summary>
-
-![WAVE Validation](documentation/testing/other/wave_validation.png)
+![script.js JavaScript Validation](documentation/testing/other/js_validation_stripe_elements.png)
 
 </details>
 
