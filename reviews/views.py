@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from datetime import date
+import datetime
 
 from .models import Review
 from products.models import Product
@@ -39,15 +39,21 @@ def add_review(request, product_id):
         if request.method == 'POST':
             form = ReviewForm(request.POST)
             if form.is_valid():
-                form.instance.author = request.user
-                form.instance.product = product
-                form.save()
-                messages.success(request,
-                                 'Your product review has been submitted')
+                today = datetime.date.today()
+                dop = form.instance.purchase_date
+                if today < dop:
+                    messages.error(request,
+                                   'Date of purchase must be in the past.')
+                else:
+                    form.instance.author = request.user
+                    form.instance.product = product
+                    form.save()
+                    messages.success(request,
+                                     'Your product review has been submitted')
 
-                update_ratings(product)
+                    update_ratings(product)
 
-                return redirect(reverse('product_detail', args=[product.id]))
+                    return redirect(reverse('product_detail', args=[product.id]))
             else:
                 messages.error(request, 'Failed to submit the review. \
                     Please ensure the form is valid.')
