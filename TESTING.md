@@ -334,6 +334,7 @@ Click [here](README.md) to return to the readme file.
 |  | Click on Order Home link | Opens Home page | Pass |
 |  | Click on Products link | Opens All Products page | Pass |
 |  | Click on Privacy Policy link | Opens Privacy Policy page | Pass |
+|  | Enter email and click Subscribe | Receive activation email | Pass |
 | 404 Error Page | Enter incorrect URL | 404 Error Page opens | Pass |
 |  | Click on Take Me Home | Returns to Home Page | Pass |
 | 500 Error Page | Admin raises an exception | 500 Error Page opens | Pass |
@@ -426,6 +427,6 @@ Click [here](README.md) to return to the readme file.
 
 ![Footer Desktop](documentation/screenshots/desktop/footer_desktop.png)
 
-![Footer Tablet](documentation/screenshots/tablet/shopping_bag_tablet.png) ![Footer Mobile](documentation/screenshots/mobile/footer_mobile.png)
+![Footer Tablet](documentation/screenshots/tablet/footer_tablet.png) ![Footer Mobile](documentation/screenshots/mobile/footer_mobile.png)
 
 [Back to Top](#testing)
