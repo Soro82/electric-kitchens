@@ -282,93 +282,54 @@ The review form and is validated to ensure:
 
 ### Existing Features
 
-#### Home Page(Logged Out)
+#### Home Page
 
-* The Home page has a hero image of a person during an indoor horse riding lesson.
-* Below this is a table showing the available times for lessons.
-* At the bottom is the three most popular horses to book a lesson with.
+* The Home page has a background image of a mixture of different electric kitchen appliances.
+* There is a Shop Now button which opens the All Products page.
 
-![Home Page(Logged Out)](documentation/screenshots/desktop/home_logged_out.png)
+![Home Page](documentation/screenshots/desktop/home_page_desktop.png)
 
-#### Home Page(Logged In)
-
-![Home Page(Logged In)](documentation/screenshots/desktop/home_logged_in.png)
-
-#### Navbar(Logged Out)
+#### Navbar
 
 * The Navbar contains the website title which is also a link to the home page.
-* The links to "Home" and "Horses" are always available to logged in and logged out users.
-* When the user is logged out the links to "Login" and "Signup" are available.
+* There is a Search Bar to allow the user to search for particular products or keywords.
+* The All Products dropdown menu has a link to the All Products page and links to allow the user to view the All Products page arranged by price, rating, wattage and ease of use.
+There are links to view only all the kettles, washing machines, air fryers and coffee machines.
+* There is a shopping cart icon which is a link to the Shopping Bag page.
+* There is a person icon which opens the My Account dropdown menu.
+* There is a banner informing customers of free delivery on all purhcases over $50.
+
+##### Navbar(Logged Out)
+
+* The My Account dropdown menu contains links to the login and register pages when the user is logged out.
 
 ![Navbar(Logged Out)](documentation/screenshots/desktop/navbar_logged_out.png)
 
-#### Navbar(Logged In)
+##### Navbar(Logged In)
 
-* When the user is logged in, the "Login" and "Signup" links change to the user's name as a dropdown menu.
-* Inside the dropdown menu are the links "My Bookings", "Make Booking" and "Logout".
-* The "My Bookings" link opens the "My Bookings Page".
-* The "Make Booking" link opens the "Horses Page" to allow the user to choose a horse to book a lesson for.
-* The "Logout" link opens the "Logout Page".
+* The My Account dropdown menu contains links to the My Profile, My Reviews and Logout pages when the user is logged in.
+* There is a link to My Wishlist beside the My Account dropdown menu when the user is logged in.
 
 ![Navbar(Logged In)](documentation/screenshots/desktop/navbar_logged_in.png)
 
-#### Popular Horses(Logged Out)
+##### Navbar(Admin Logged In)
 
-* When the user is logged out there is a "Login" button under each of the Popular Horses.
-* When clicked the button will open the "Login" page.
+* There is an extra link in the My Account dropdown menu called Product Management when admin users are logged in.
 
-![Popular Horses(Logged Out)](documentation/screenshots/desktop/popular_horses_logged_out.png)
+![Navbar(Logged In)](documentation/screenshots/desktop/navbar_logged_in_admin.png)
 
-#### Popular Horses(Logged In)
+#### All Products Page
 
-* When the user is logged in, the "Login" button changes to a "Book Now" button.
-* When clicked the button will open the "Make Booking" page allowing the user to book a lesson with the horse selected.
+* All the products on the website are listed on the All Products page with the total number of products at the top left.
+* There is a Sort dropdown menu allowing the user to sort the products by price, rating, wattage, ease of use or capacity.
+* Each product's image is displayed with the product's name, price, category, rating and capacity underneath.
+* The user can click on the product's image to open the Product Detail page to view more details about the product.
 
-![Popular Horses(Logged In)](documentation/screenshots/desktop/popular_horses_logged_in.png)
+![Popular Horses(Logged In)](documentation/screenshots/desktop/all_products_desktop.png)
 
-#### Horses Page(Logged Out)
 
-* There are six horses to choose from.
-* The first page has three horses with a "Next" button underneath.
-* The user can click on the "Next" button to see the last three horses.
-* When the user is on the second page of horses there is a "Prev" button underneath to bring them back to the first page.
-* When the user is logged out there is a "Login" button under each of the Horses.
-* When clicked the button will open the "Login" page.
 
-![Horses Page(Logged Out)](documentation/screenshots/desktop/horses_logged_out.png)
 
-#### Horses Page(Logged In)
-
-* When the user is logged in, the "Login" button changes to a "Book Now" button.
-* When clicked the button will open the "Make Booking" page allowing the user to book a lesson with the horse selected.
-
-![Horses Page(Logged In)](documentation/screenshots/desktop/horses_logged_in.png)
-
-#### Make Booking Page
-
-* The "Make Booking Page" displays the form to make a booking.
-* The name of the horse chosen by the user is displayed at the top of the form.
-* Below are four input fields for the user to choose from.
-* The first is the date they wish to book the lesson for.
-* The user must click on the calender icon which opens a calender allowing the user to choose a date.
-* This field is validated to ensure the user does not choose a previous date.
-* The next three input fields are dropdown menus allowing the user to choose from a specific list.
-* The user can choose the lesson time, indoor or outdoor and their level of experience.
-* There are also two optional input fields at the bottom of the form.
-* The first allows the user to indicate if they are an adult or a child.
-* The second allows the user to enter their height in meters.
-
-![Make Booking Page](documentation/screenshots/tablet/make_booking.png)
-
-#### My Bookings Page
-
-* All the bookings made by the logged in user are displayed here.
-* If the user has not made a booking, a message is displayed informing them of this.
-* There are two buttons under each booking, "Edit" and "Delete".
-* The "Edit" button opens the "edit booking page" allowing the user to make changes to their bookings.
-* The "Delete" button opens the "delete booking page".
-
-![My Bookings Page](documentation/screenshots/desktop/my_bookings.png)
 
 #### Edit Booking Page
 
@@ -388,21 +349,13 @@ The review form and is validated to ensure:
 
 ![Delete Booking Page](documentation/screenshots/desktop/delete_confirmation.png)
 
-#### Signup Page
+#### Signup, Login and Logout Pages
 
 * The Signup Page contains a link to the "Login Page" to allow users who are already signed up to log in.
-
-![Signup Page](documentation/screenshots/tablet/signup.png)
-
-#### Login Page
-
 * The Login Page contains a link to the "Signup Page" to allow unregistered users to register an account.
 
-![Login Page](documentation/screenshots/tablet/sign_in.png)
+![Signup Page](documentation/screenshots/mobile/register_mobile.png) ![Login Page](documentation/screenshots/mobile/login_mobile.png) ![Logout Page](documentation/screenshots/mobile/logout_mobile.png)
 
-#### Logout Page
-
-![Logout Page](documentation/screenshots/tablet/sign_out.png)
 
 #### Footer
 
