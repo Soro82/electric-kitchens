@@ -240,6 +240,207 @@ Each user has the ability to:
 
 </details>
 
+### Database Scheme
+
+* [Draw.io](https://draw.io) was used to create the database scheme.
+
+![Database Scheme](documentation/images/electric_kitchens_erd.png)
+
+[Back to Top](#electric-kitchens)
+
+## Features
+
+### Security Features
+
+#### User Authentication
+* Django comes with a user authentication system called AllAuth. 
+* It handles user accounts, groups, permissions and cookie-based user sessions.
+* The Django authentication system handles both authentication and authorization. 
+* Authentication verifies a user is who they claim to be, for example when a user is logging in to the website. 
+* Authorization determines what an authenticated user is allowed to do, for example in the navbar in base.html we check if the user is logged in using this line of code: {% if user.is_authenticated %}.
+
+#### CSRF (Cross Site Request Forgery)
+* CSRF attacks allow a malicious user to execute actions using the credentials of another user without that user’s knowledge or consent.
+* Django has built-in protection against most types of CSRF attacks.
+* CSRF protection works by checking for a secret in each POST request. 
+* This ensures that a malicious user cannot “replay” a form POST to your website and have another logged in user unwittingly submit that form. 
+* The malicious user would have to know the secret, which is user specific (using a cookie).
+
+#### The login_required Decorator
+* The login_required decorator is on all views that require the user to be logged in.
+* For this website it was used on the views in the products, profiles, reviews and wishlist apps. It ensures that only authenticated users can access these views.
+
+#### Custom Error Pages
+* The 404 and 500 Error Pages are used to allow the user to return to the website’s home page.
+* They use the base.html to inform the user of their error in a friendly and helpful manner.
+
+#### Form Validation
+The review form and is validated to ensure:
+* The date entered is today's date or a previous date.
+
+[Back to Top](#electric-kitchens)
+
+### Existing Features
+
+#### Home Page(Logged Out)
+
+* The Home page has a hero image of a person during an indoor horse riding lesson.
+* Below this is a table showing the available times for lessons.
+* At the bottom is the three most popular horses to book a lesson with.
+
+![Home Page(Logged Out)](documentation/screenshots/desktop/home_logged_out.png)
+
+#### Home Page(Logged In)
+
+![Home Page(Logged In)](documentation/screenshots/desktop/home_logged_in.png)
+
+#### Navbar(Logged Out)
+
+* The Navbar contains the website title which is also a link to the home page.
+* The links to "Home" and "Horses" are always available to logged in and logged out users.
+* When the user is logged out the links to "Login" and "Signup" are available.
+
+![Navbar(Logged Out)](documentation/screenshots/desktop/navbar_logged_out.png)
+
+#### Navbar(Logged In)
+
+* When the user is logged in, the "Login" and "Signup" links change to the user's name as a dropdown menu.
+* Inside the dropdown menu are the links "My Bookings", "Make Booking" and "Logout".
+* The "My Bookings" link opens the "My Bookings Page".
+* The "Make Booking" link opens the "Horses Page" to allow the user to choose a horse to book a lesson for.
+* The "Logout" link opens the "Logout Page".
+
+![Navbar(Logged In)](documentation/screenshots/desktop/navbar_logged_in.png)
+
+#### Popular Horses(Logged Out)
+
+* When the user is logged out there is a "Login" button under each of the Popular Horses.
+* When clicked the button will open the "Login" page.
+
+![Popular Horses(Logged Out)](documentation/screenshots/desktop/popular_horses_logged_out.png)
+
+#### Popular Horses(Logged In)
+
+* When the user is logged in, the "Login" button changes to a "Book Now" button.
+* When clicked the button will open the "Make Booking" page allowing the user to book a lesson with the horse selected.
+
+![Popular Horses(Logged In)](documentation/screenshots/desktop/popular_horses_logged_in.png)
+
+#### Horses Page(Logged Out)
+
+* There are six horses to choose from.
+* The first page has three horses with a "Next" button underneath.
+* The user can click on the "Next" button to see the last three horses.
+* When the user is on the second page of horses there is a "Prev" button underneath to bring them back to the first page.
+* When the user is logged out there is a "Login" button under each of the Horses.
+* When clicked the button will open the "Login" page.
+
+![Horses Page(Logged Out)](documentation/screenshots/desktop/horses_logged_out.png)
+
+#### Horses Page(Logged In)
+
+* When the user is logged in, the "Login" button changes to a "Book Now" button.
+* When clicked the button will open the "Make Booking" page allowing the user to book a lesson with the horse selected.
+
+![Horses Page(Logged In)](documentation/screenshots/desktop/horses_logged_in.png)
+
+#### Make Booking Page
+
+* The "Make Booking Page" displays the form to make a booking.
+* The name of the horse chosen by the user is displayed at the top of the form.
+* Below are four input fields for the user to choose from.
+* The first is the date they wish to book the lesson for.
+* The user must click on the calender icon which opens a calender allowing the user to choose a date.
+* This field is validated to ensure the user does not choose a previous date.
+* The next three input fields are dropdown menus allowing the user to choose from a specific list.
+* The user can choose the lesson time, indoor or outdoor and their level of experience.
+* There are also two optional input fields at the bottom of the form.
+* The first allows the user to indicate if they are an adult or a child.
+* The second allows the user to enter their height in meters.
+
+![Make Booking Page](documentation/screenshots/tablet/make_booking.png)
+
+#### My Bookings Page
+
+* All the bookings made by the logged in user are displayed here.
+* If the user has not made a booking, a message is displayed informing them of this.
+* There are two buttons under each booking, "Edit" and "Delete".
+* The "Edit" button opens the "edit booking page" allowing the user to make changes to their bookings.
+* The "Delete" button opens the "delete booking page".
+
+![My Bookings Page](documentation/screenshots/desktop/my_bookings.png)
+
+#### Edit Booking Page
+
+* The "Edit Booking Page" has a form similar to the "make booking" form.
+* The user can change any of the six input field values and click on the "Update Booking" button.
+* This will update the details of their booking in the database.
+* The "Cancel" button allows the user to return to the "My Bookings Page".
+
+![Edit Booking Page](documentation/screenshots/desktop/edit_booking.png)
+
+#### Delete Booking Page
+
+* A message is displayed to the user asking them if they are sure they want to delete this booking.
+* Underneath are two buttons, "Confirm Delete" and "Cancel".
+* The "Confirm Delete" button will delete the booking from the database.
+* The "Cancel" button will return the user to the "My Bookings Page".
+
+![Delete Booking Page](documentation/screenshots/desktop/delete_confirmation.png)
+
+#### Signup Page
+
+* The Signup Page contains a link to the "Login Page" to allow users who are already signed up to log in.
+
+![Signup Page](documentation/screenshots/tablet/signup.png)
+
+#### Login Page
+
+* The Login Page contains a link to the "Signup Page" to allow unregistered users to register an account.
+
+![Login Page](documentation/screenshots/tablet/sign_in.png)
+
+#### Logout Page
+
+![Logout Page](documentation/screenshots/tablet/sign_out.png)
+
+#### Footer
+
+![Footer](documentation/screenshots/desktop/footer.png)
+
+#### Feedback Messages
+
+* Successfully Signed In
+
+![Successfully Signed In Message](documentation/screenshots/desktop/messages/sign_in_success.png)
+
+* Update Successful
+
+![Update Successful Message](documentation/screenshots/desktop/messages/update_successful_bar.png)
+
+* Booking Deleted Successfully
+
+![Booking Deleted Successfully Message](documentation/screenshots/desktop/messages/delete_successful_bar.png)
+
+* Horse Booked
+
+![Horse Booked Message](documentation/screenshots/desktop/messages/horse_booked_bar.png)
+
+* Lesson Time Booked
+
+![Lesson Time Booked Message](documentation/screenshots/desktop/messages/lesson_time_booked_bar.png)
+
+* Date Not Current
+
+![Date Not Current Message](documentation/screenshots/desktop/messages/date_not_current_bar.png)
+
+### Future Features
+* Allow users to add reviews for each horse.
+* Only allow lessons to be booked from Monday to Saturday.
+* Allow instructors to login as admin users and assign horses to each booking.
+
+[Back to Top](#electric-kitchens)
+
 ## Technologies Used
 
 ### Languages Used
