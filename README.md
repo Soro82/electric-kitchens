@@ -195,6 +195,7 @@ Each user has the ability to:
 ## Design
 
 ### Color Scheme
+I chose a professional color scheme for this website to make it stand out from other e-commerce websites.
 
 ### Wireframes
 <details>
