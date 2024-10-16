@@ -321,13 +321,53 @@ There are links to view only all the kettles, washing machines, air fryers and c
 #### All Products Page
 
 * All the products on the website are listed on the All Products page with the total number of products at the top left.
-* There is a Sort dropdown menu allowing the user to sort the products by price, rating, wattage, ease of use or capacity.
+* There is a dropdown menu allowing the user to sort the products by price, rating, wattage, ease of use or capacity.
 * Each product's image is displayed with the product's name, price, category, rating and capacity underneath.
 * The user can click on the product's image to open the Product Detail page to view more details about the product.
 
 ![Popular Horses(Logged In)](documentation/screenshots/desktop/all_products_desktop.png)
 
+#### Product Details Page(Logged Out)
 
+* There is a large image of the product and all the details of the product on this page.
+* The quantity box allows the user to choose the quantity of the product they wish to purchase.
+* There is a plus and minus button on either side of the quantity box.
+* The minus button is disabled when the quantity is on 1.
+* The plus button is disabled when the quantity is 99.
+* The Keep Shopping button allows the user to return to the All Products page.
+* The Add to Bag button allows the user to add the product to their shopping bag.
+
+![Popular Horses(Logged In)](documentation/screenshots/desktop/product_detail_logged_out.png)
+
+#### Product Details Page(Logged In)
+
+* When the user is logged in, there are 2 more buttons under the Add to Bag button.
+* The Add to Wishlist button adds the product to the user's wishlist.
+* The Add Review button opens the Add Review page allowing the user to add a review for that product.
+
+![Popular Horses(Logged In)](documentation/screenshots/desktop/product_detail_desktop.png)
+
+#### Product Details Page(Admin Logged In)
+
+* When admin users are logged in, there are 2 extra buttons above the quantity box.
+* The Edit button opens the Edit Product page.
+* The Delete button will delete the product and all it's details from the website.
+
+![Popular Horses(Logged In)](documentation/screenshots/desktop/product_detail_admin.png)
+
+#### Shopping Bag Page(Admin Logged In)
+
+* The Shopping Bag Page lists the all the products the user has added to their shopping bag.
+* The page shows the image, product name, product price, quantity added and the subtotal for each product in the bag.
+* There are two button under the quantity box for each item in the bag.
+* The Update button allows the user to change the quantity for that item.
+* When they click on the Update button the subtotal will also change.
+* The Remove button allows the user to remove that item from their shopping bag.
+* The bag total, delivery cost and grand total are displayed at the bottom of the page.
+* The Keep Shopping button allows the user to return to the All Products page.
+* The Secure Checkout button opens the Checkout page.
+
+![Popular Horses(Logged In)](documentation/screenshots/desktop/shopping_bag_desktop.png)
 
 
 
