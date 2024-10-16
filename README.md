@@ -79,33 +79,48 @@ To allow users to:
 * Remove a product from their wishlist.
 
 ### Target Audience
-The website is designed to allow people to book horse riding lessons. They can choose the date and time for their lesson, whether they would like it indoor or outdoor, their level of experience and what horse they would like for their lesson. They also have the option to indicate if they are an adult or a child and to enter their height if they wish. With the CRUD (Create, Read, Update, Delete) functionality they can also view, edit and delete their bookings when they log into their account.
+The website's target audience are customers who wish to purchase electrical kitchen appliances. It is user friendly allowing users to browse the website easily. Users can search for products in the search bar using keywords or they can browse the available categories using the links in the navbar. They can sort the products by price, rating, capacity, etc. They can register an account on the website allowing them to keep a record of their order history and save their delivery information. 
 
 Each user has the ability to:
 
 ### New User
-* View the lesson times available
-* See the three most popular horses
-* Access to the Horses page to see all available horses and their details
-* Register their own personal account
+* View the products available for purchase.
+* View the details of a product.
+* See their total purchase price at any time in the navbar.
+* Sort products by category.
+* Sort products by price, rating, wattage, ease of use or capacity.
+* Search for products in the search bar.
+* Select a quantity of an individual product to purchase.
+* Add a product to their shopping bag.
+* View their shopping bag at any time.
+* Update the quantity of an item in their shopping bag.
+* Remove a product from their shopping bag.
+* Enter their payment information.
+* Feel safe and secure when entering their payment information.
+* View a confirmation of their order.
+* Receive a confirmation email for each order submitted.
+* Register for an account.
 
 ### Registered User
-* Login to their account
-* Make a booking
-* View their bookings
-* Update their bookings
-* Delete their bookings
+* Log in to their personal account.
+* Log out of their account.
+* Recover their password if they forget their password.
+* Receive an email confirmation when they register for an account.
+* View their profile page when logged in.
+* Save their delivery information.
+* View their delivery information on their profile page.
+* View their order history on their profile page.
+* Review a product.
+* View the reviews they have made.
+* Remove a review that they made.
+* Add a product to their personal wishlist.
+* View their wishlist.
+* Remove a product from their wishlist.
 
 ### Admin User
-* Make a booking
-* View bookings for all users
-* Update bookings for all users
-* Delete bookings for all users
-* Add new horses to the website
-* Upload pictures of the horses
-* View details of all horses
-* Update details of all horses
-* Delete horses from the website
+* Add a product to the website.
+* Edit/Update a product's details.
+* Delete a product from the website.
 
 [Back to Top](#electric-kitchens)
 
@@ -275,8 +290,8 @@ Each user has the ability to:
 * They use the base.html to inform the user of their error in a friendly and helpful manner.
 
 #### Form Validation
-The review form and is validated to ensure:
-* The date entered is today's date or a previous date.
+* The Date of Purchase on the review form is validated to ensure the date entered is today's date or a previous date.
+* All compulsory fields on all forms must be complete before the form can be submitted.
 
 [Back to Top](#electric-kitchens)
 
@@ -298,6 +313,8 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * There is a shopping cart icon which is a link to the Shopping Bag page.
 * There is a person icon which opens the My Account dropdown menu.
 * There is a banner informing customers of free delivery on all purhcases over $50.
+
+![Navbar All Products Menu](documentation/screenshots/desktop/products_dropdown_desktop.png)
 
 ##### Navbar(Logged Out)
 
@@ -492,9 +509,9 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 
 ### Future Features
-* Allow users to add reviews for each horse.
-* Only allow lessons to be booked from Monday to Saturday.
-* Allow instructors to login as admin users and assign horses to each booking.
+* Reviews must be approved by admin users before they are shown.
+* Reviews can be seen by all users.
+* A FAQs section.
 
 [Back to Top](#electric-kitchens)
 
