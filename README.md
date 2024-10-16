@@ -28,6 +28,10 @@ The purpose of this site is to allow users to purchase electric kitchen applianc
 * [Security Features](#security-features)
 * [Existing Features](#existing-features)
 * [Future Features](#future-features)
+### [Marketing](#marketing-1)
+* [Search Engine Optimization](#search-engine-optimizationseo)
+* [Social Media Marketing](#social-media-marketing)
+* [Newsletter](#newsletter)
 ### [Technologies Used](#technologies-used-1)
 * [Languages Used](#languages-used)
 * [Frameworks Used](#frameworks-used)
@@ -511,6 +515,37 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * Reviews must be approved by admin users before they are shown.
 * Reviews can be seen by all users.
 * A FAQs section.
+
+[Back to Top](#electric-kitchens)
+
+## Marketing
+
+### Search Engine Optimization(SEO)
+
+* I created a list of keywords that would increase the SEO of the website and put them in the keywords meta tag in base.html.
+* I added some of the keywords in the descriptions of the products on the website.
+
+![Meta Keywords](documentation/screenshots/marketing/meta_keywords.png)
+
+[XML Sitemaps Generator](https://www.xml-sitemaps.com) was used to generate a sitemap.xml file for the website.
+
+![sitemap.xml image](documentation/screenshots/marketing/sitemap.xml_image.png)
+
+![robots.txt image](documentation/screenshots/marketing/robots.txt_image.png)
+
+### Social Media Marketing
+
+I created a Facebook Business page to promote the website. There is a link to the page in the footer of the website. The link to the Facebook page is [here](https://www.facebook.com/profile.php?id=61566504556236).
+
+![Facebook Page Top](documentation/screenshots/facebook/facebook_page_top.png)
+
+![Facebook Page Middle](documentation/screenshots/facebook/facebook_page_middle.png)
+
+![Facebook Page Bottom](documentation/screenshots/facebook/facebook_page_bottom.png)
+
+### Newsletter
+
+[Mailchimp](https://mailchimp.com/?currency=EUR) was used to add a newsletter sign-up form to the footer of the website.
 
 [Back to Top](#electric-kitchens)
 
