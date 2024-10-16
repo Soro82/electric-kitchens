@@ -402,6 +402,17 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 ![Order Confirmation Page](documentation/screenshots/desktop/order_confirmation.png)
 
+#### My Profile Page
+
+* The My Profile page contains input fields for the user to enter their delivery information.
+* Each field has a placeholder telling the user what details need to be entered into that field.
+* The delivery information is where the user wants their products delivered to.
+* The user can update their delivery information at any time and click on the Update Information button.
+* All of the user's previous orders are shown on the right of the page under Order History.
+* The user can click on the order number to view the order confirmation for that order.
+
+![My Profile Page](documentation/screenshots/desktop/my_profile_order_history_desktop.png)
+
 #### Add Review Page
 
 * The product image and product description are displayed at the top of the page.
@@ -419,83 +430,66 @@ There are links to view only all the kettles, washing machines, air fryers and c
 #### My Reviews Page
 
 * The My Reviews page contains four columns for each review.
-* The product's name and image
-* The user's review and the purchase date if applicable
-* The options the user chose for the product's rating, ease of use and energy efficency
+* The product's name and image.
+* The user's review and the purchase date if applicable.
+* The options the user chose for the product's rating, ease of use and energy efficency.
 * A Remove button allowing the user to review this review.
+* At the bottom of the page there is a button allowing the user to return to the All Products page.
 
-![Add Review Page Top](documentation/screenshots/desktop/my_reviews_desktop.png)
+![My Reviews Page](documentation/screenshots/desktop/my_reviews_desktop.png)
 
 #### My Wishlist Page
 
-* The My Reviews page contains four columns for each review.
-* The product's name and image
-* The user's review and the purchase date if applicable
-* The options the user chose for the product's rating, ease of use and energy efficency
-* A Remove button allowing the user to review this review.
+* The My Wishlist page contains four columns for each product in the wishlist.
+* The product's name, image, price and a Remove button allowing the user to remove the product from their wishlist.
+* At the bottom of the page there is a button allowing the user to return to the All Products page.
 
-![Add Review Page Top](documentation/screenshots/desktop/my_wishlist_desktop.png)
+![My Wishlist Page](documentation/screenshots/desktop/my_wishlist_desktop.png)
 
+#### Product Management Page
 
+* When the admin user clicks on Product Management in the My Account dropdown menu it opens the Product Management Page.
+* The Product Management Page contains a form allowing the admin user to add products to the website.
+* The form contains a dropdown menu containing all the product categories.
+* All compulsory fields have an asterix beside the fields label name.
+* There is a button under the "Image Url" field allowing the user to upload an image for the product.
+* The Cancel button will return the user to the All Products page.
+* The Add Product button will add the product to the website.
 
+![Product Management Page Top](documentation/screenshots/desktop/add_product_top_desktop.png)
 
+![Product Management Page Bottom](documentation/screenshots/desktop/add_product_bottom_desktop.png)
 
+#### Edit Product Page
 
-#### Edit Booking Page
+* The Edit Product Page has a form is the same as the Add Product form.
+* All the fields are populated with the details of the product.
+* There is an alert message displayed informing the user that they are editing a product.
+* The user can change any of the field values and click on the Update Product button.
+* This will update the details of the product in the database.
+* The Cancel button will return the user to the All Products page.
 
-* The "Edit Booking Page" has a form similar to the "make booking" form.
-* The user can change any of the six input field values and click on the "Update Booking" button.
-* This will update the details of their booking in the database.
-* The "Cancel" button allows the user to return to the "My Bookings Page".
+![Edit Product Page Bottom](documentation/screenshots/desktop/edit_product_bottom_desktop.png)
 
-![Edit Booking Page](documentation/screenshots/desktop/edit_booking.png)
-
-#### Delete Booking Page
-
-* A message is displayed to the user asking them if they are sure they want to delete this booking.
-* Underneath are two buttons, "Confirm Delete" and "Cancel".
-* The "Confirm Delete" button will delete the booking from the database.
-* The "Cancel" button will return the user to the "My Bookings Page".
-
-![Delete Booking Page](documentation/screenshots/desktop/delete_confirmation.png)
+![Edit Product Page Top](documentation/screenshots/desktop/edit_product_top_desktop.png)
 
 #### Signup, Login and Logout Pages
 
 * The Signup Page contains a link to the "Login Page" to allow users who are already signed up to log in.
 * The Login Page contains a link to the "Signup Page" to allow unregistered users to register an account.
 
-![Signup Page](documentation/screenshots/mobile/register_mobile.png) ![Login Page](documentation/screenshots/mobile/login_mobile.png) ![Logout Page](documentation/screenshots/mobile/logout_mobile.png)
+![Signup Page](documentation/screenshots/mobile/register_mobile.png)    ![Login Page](documentation/screenshots/mobile/login_mobile.png)     ![Logout Page](documentation/screenshots/mobile/logout_mobile.png)
 
 
 #### Footer
 
-![Footer](documentation/screenshots/desktop/footer.png)
+* The footer contains a link to the website's Facebook page.
+* There is a form allowing users to signup to the newsletter by entering their email address.
+* There is a link to the website's Privacy Policy.
+* There are also links to the Home page and the All Products page.
 
-#### Feedback Messages
+![Footer](documentation/screenshots/desktop/footer_desktop.png)
 
-* Successfully Signed In
-
-![Successfully Signed In Message](documentation/screenshots/desktop/messages/sign_in_success.png)
-
-* Update Successful
-
-![Update Successful Message](documentation/screenshots/desktop/messages/update_successful_bar.png)
-
-* Booking Deleted Successfully
-
-![Booking Deleted Successfully Message](documentation/screenshots/desktop/messages/delete_successful_bar.png)
-
-* Horse Booked
-
-![Horse Booked Message](documentation/screenshots/desktop/messages/horse_booked_bar.png)
-
-* Lesson Time Booked
-
-![Lesson Time Booked Message](documentation/screenshots/desktop/messages/lesson_time_booked_bar.png)
-
-* Date Not Current
-
-![Date Not Current Message](documentation/screenshots/desktop/messages/date_not_current_bar.png)
 
 ### Future Features
 * Allow users to add reviews for each horse.
