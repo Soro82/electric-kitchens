@@ -527,9 +527,16 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 ![Meta Keywords](documentation/screenshots/marketing/meta_keywords.png)
 
-[XML Sitemaps Generator](https://www.xml-sitemaps.com) was used to generate a sitemap.xml file for the website.
+* [XML Sitemaps Generator](https://www.xml-sitemaps.com) was used to generate a sitemap.xml file for the website.
+* The sitemap.xml helps search engines crawl or navigate through a website's important page urls.
+* It helps search engines understand a website’s structure.
 
 ![sitemap.xml image](documentation/screenshots/marketing/sitemap.xml_image.png)
+
+* I also added a robots.txt file to the website.
+* The robots.txt file tells search engines where they are not allowed to go on a website.
+* It lists out any folders or files that will not be crawled or indexed by search engine spiders.
+* Having a robots.txt file shows that you acknowledge that search engines are allowed on your site and that they may have free access to it. As a result it will improve the website’s SEO ranking.
 
 ![robots.txt image](documentation/screenshots/marketing/robots.txt_image.png)
 
