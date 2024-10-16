@@ -325,7 +325,7 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * Each product's image is displayed with the product's name, price, category, rating and capacity underneath.
 * The user can click on the product's image to open the Product Detail page to view more details about the product.
 
-![Popular Horses(Logged In)](documentation/screenshots/desktop/all_products_desktop.png)
+![All Products Page](documentation/screenshots/desktop/all_products_desktop.png)
 
 #### Product Details Page(Logged Out)
 
@@ -337,7 +337,7 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * The Keep Shopping button allows the user to return to the All Products page.
 * The Add to Bag button allows the user to add the product to their shopping bag.
 
-![Popular Horses(Logged In)](documentation/screenshots/desktop/product_detail_logged_out.png)
+![Product Details Page(Logged Out)](documentation/screenshots/desktop/product_detail_logged_out.png)
 
 #### Product Details Page(Logged In)
 
@@ -345,7 +345,7 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * The Add to Wishlist button adds the product to the user's wishlist.
 * The Add Review button opens the Add Review page allowing the user to add a review for that product.
 
-![Popular Horses(Logged In)](documentation/screenshots/desktop/product_detail_desktop.png)
+![Product Details Page(Logged In)](documentation/screenshots/desktop/product_detail_desktop.png)
 
 #### Product Details Page(Admin Logged In)
 
@@ -353,9 +353,9 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * The Edit button opens the Edit Product page.
 * The Delete button will delete the product and all it's details from the website.
 
-![Popular Horses(Logged In)](documentation/screenshots/desktop/product_detail_admin.png)
+![Product Details Page(Admin Logged In)](documentation/screenshots/desktop/product_detail_admin.png)
 
-#### Shopping Bag Page(Admin Logged In)
+#### Shopping Bag Page
 
 * The Shopping Bag Page lists the all the products the user has added to their shopping bag.
 * The page shows the image, product name, product price, quantity added and the subtotal for each product in the bag.
@@ -367,7 +367,77 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * The Keep Shopping button allows the user to return to the All Products page.
 * The Secure Checkout button opens the Checkout page.
 
-![Popular Horses(Logged In)](documentation/screenshots/desktop/shopping_bag_desktop.png)
+![Shopping Bag Page](documentation/screenshots/desktop/shopping_bag_desktop.png)
+
+#### Checkout Page
+
+* The Checkout page contains input fields for the user to enter their details.
+* Each field has a placeholder telling the user what details need to be entered into that field.
+* All compulsory fields have an asterix beside the placeholder name.
+* The Details section asks for the user's full name and email address.
+* The delivery information is where the user wants their products delivered to.
+* There is a checkbox under the delivery information allowing the user to save their delivery information to their profile.
+* The fields will be populated using this information the next time they make a purchase.
+* The payment details field is made safe and secure using Stripe.
+* The Adjust Bag button allows the user to return to their shopping bag.
+* The Complete Order button takes the payment from the user and creates the order.
+* The Order Summary is listed on the right to remind the user of what they are purchasing.
+
+![Checkout Page Top](documentation/screenshots/desktop/checkout_page_top.png)
+
+![Checkout Page Bottom](documentation/screenshots/desktop/checkout_page_bottom.png)
+
+#### The Loading Spinner
+
+* A loading spinner is displayed when the user clicks on the Complete Order button on the Checkout page.
+
+![The Loading Spinner](documentation/screenshots/desktop/checkout_loading_spinner.png)
+
+#### Order Confirmation Page
+
+* The Order Confirmation Page opens when the order is completed.
+* This shows the order details, the address the products will be delivered to and the total cost.
+* A copy of the Order Confirmation is emailed to the user's email address.
+* The user will also see a success message displayed informing them of this.
+
+![Order Confirmation Page](documentation/screenshots/desktop/order_confirmation.png)
+
+#### Add Review Page
+
+* The product image and product description are displayed at the top of the page.
+* There is a large textbox allowing the user the enter the details of their review.
+* Underneath are three dropdowm menu boxes allowing the user to choose from five options.
+* The user can choose from 1 to 5 on how they rate the product, how easy it is to use and the energy rating of the product.
+* The Date of Purchase box is optional. There is also validation on it to ensure the user chooses a previous date.
+* The Cancel button will return the user to the All Products page.
+* The Add Review button will add the review to the user's profile.
+
+![Add Review Page Top](documentation/screenshots/desktop/add_review_top.png)
+
+![Add Review Page Bottom](documentation/screenshots/desktop/add_review_bottom.png)
+
+#### My Reviews Page
+
+* The My Reviews page contains four columns for each review.
+* The product's name and image
+* The user's review and the purchase date if applicable
+* The options the user chose for the product's rating, ease of use and energy efficency
+* A Remove button allowing the user to review this review.
+
+![Add Review Page Top](documentation/screenshots/desktop/my_reviews_desktop.png)
+
+#### My Wishlist Page
+
+* The My Reviews page contains four columns for each review.
+* The product's name and image
+* The user's review and the purchase date if applicable
+* The options the user chose for the product's rating, ease of use and energy efficency
+* A Remove button allowing the user to review this review.
+
+![Add Review Page Top](documentation/screenshots/desktop/my_wishlist_desktop.png)
+
+
+
 
 
 
