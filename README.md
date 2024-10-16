@@ -30,14 +30,12 @@ The purpose of this site is to allow users to purchase electric kitchen applianc
 * [Future Features](#future-features)
 ### [Technologies Used](#technologies-used-1)
 * [Languages Used](#languages-used)
-* [Databases Used](#databases-used)
 * [Frameworks Used](#frameworks-used)
 * [Programs Used](#programs-used)
 ### [Testing](#testing-1)
 ### [Deployment and Local developement](#deployment-and-local-development)
 * [Heroku Deployment](#heroku-deployment)
 * [Local Developement](#local-development)
-* [ElephantSQL Database](#elephantsql-database)
 ### [References](#references-1)
 * [Credits](#credits)
 * [Acknowledgments](#acknowledgments)
@@ -588,3 +586,22 @@ Forking is a way to make a copy of the original repository on your GitHub accoun
 * Change the current working directory to the location where you want the cloned directory to be made.
 * Type git clone and then paste The URL copied in step 3.
 * Press Enter and your local clone will be created.
+
+[Back to Top](#electric-kitchens)
+
+## References
+
+### Credits
+* All the images of the products were downloaded from https://www.amazon.co.uk
+* All the product details were copied from https://www.amazon.co.uk
+* The images were resized and converted using https://www.resizepixel.com
+* The Lato font family was imported from [Google Fonts](https://fonts.google.com/)
+* I downloaded the background image for the home page and the favicon from www.freepik.com.
+* https://docs.djangoproject.com was used for Django documentation.
+* https://getbootstrap.com/docs/4.6 was used to learn more about Bootstrap.
+* https://www.w3schools.com was used to simplify some of the documentation in Django and Bootstrap.
+
+### Acknowledgments
+I would like to thank my mentor Mitko Bachvarov for his support and feedback throughout my project.
+
+[Back to Top](#electric-kitchens)
