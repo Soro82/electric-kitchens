@@ -200,7 +200,10 @@ Each user has the ability to:
 ## Design
 
 ### Color Scheme
-I chose a professional color scheme for this website to make it stand out from other e-commerce websites.
+* I chose a professional color scheme for this website to make it stand out from other e-commerce websites.
+* The following color palette was created using [Coolors](https://coolors.co/image-picker).
+
+![Color Palette](documentation/images/electric_kitchens_color_palette.png)
 
 ### Wireframes
 <details>
@@ -614,19 +617,19 @@ The website was deployed using [Heroku](https://www.heroku.com/) through the fol
 4. Click on "create app".
 5. Navigate to the settings tab and locate the "Config Vars" section and click "Reveal config vars".
 6. Add the following Config Vars:
-         | Key | Value |
-         | :-: | :---: |
-         | AWS_ACCESS_KEY_ID | user's own value |
-         | AWS_SECRET_ACCESS_KEY | user's own value |
-         | DATABASE_URL | user's own value |
-         | DISABLE_COLLECTSTATIC | 1 (this is temporary) |
-         | EMAIL_HOST_PASS | user's own value |
-         | EMAIL_HOST_USER | user's own value |
-         | SECRET_KEY | user's own value |
-         | STRIPE_PUBLIC_KEY | user's own value |
-         | STRIPE_SECRET_KEY | user's own value |
-         | STRIPE_WH_SECRET | user's own value |
-         | USE_AWS | True |
+| Key | Value |
+| :-: | :---: |
+| AWS_ACCESS_KEY_ID | user's own value |
+| AWS_SECRET_ACCESS_KEY | user's own value |
+| DATABASE_URL | user's own value |
+| DISABLE_COLLECTSTATIC | 1 (this is temporary) |
+| EMAIL_HOST_PASS | user's own value |
+| EMAIL_HOST_USER | user's own value |
+| SECRET_KEY | user's own value |
+| STRIPE_PUBLIC_KEY | user's own value |
+| STRIPE_SECRET_KEY | user's own value |
+| STRIPE_WH_SECRET | user's own value |
+| USE_AWS | True |
 
 7. Navigate to the "Deploy" section by clicking the "Deploy" tab in the top navbar.
 8. Select "GitHub" as the deployment method and click "Connect to GitHub".
@@ -640,7 +643,8 @@ Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live 
 ### Amazon AWS
 
 #### AWS Bucket Creation
-* All static and media files in this project are stored in Amazon Web Services S3 bucket which is a cloud based storage service. * You can create your own bucket by following these steps:
+* All static and media files in this project are stored in Amazon Web Services S3 bucket which is a cloud based storage service.
+* You can create your own bucket by following these steps:
 
 1. Go to Amazon Web Service website and click on Create An AWS Account, or login if you already have an account.
 2. Login to your new account, go to AWS Management Console and find service S3. 
