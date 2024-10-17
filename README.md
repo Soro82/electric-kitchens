@@ -666,20 +666,7 @@ Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live 
 18. Click on Edit, and paste in this CORS Configuration below, which is going to set up the required access between the Heroku app and this S3 bucket. 
 19. Click on Save Changes.
 
-[
-   {
-      "AllowedHeaders": [
-         "Authorization"
-      ],
-      "AllowedMethods": [
-         "GET"
-      ],
-      "AllowedOrigins": [
-         "*"
-      ],
-      "ExposeHeaders": []
-   }
-]
+![CORS Configuration](documentation/images/CORS_configuration_AWS.png)
 
 20. Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
 21. Select Type of Policy: choose S3 Bucket Policy
@@ -708,19 +695,7 @@ Back on the AWS Services Menu, search for and open IAM. Once on the IAM page, fo
 
 You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
 
- {
- 	"Version": "2012-10-17",
- 	"Statement": [
- 		{
- 			"Effect": "Allow",
- 			"Action": "s3:*",
- 			"Resource": [
- 				"arn:aws:s3:::your-bucket-name",
- 				"arn:aws:s3:::your-bucket-name/*"
- 			]
- 		}
- 	]
- }
+ ![Bucket Policy](documentation/images/bucket_policy_AWS.png)
 
 8. Click Review Policy.
 9. Provide a description:
