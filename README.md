@@ -39,6 +39,7 @@ The purpose of this site is to allow users to purchase electric kitchen applianc
 ### [Testing](#testing-1)
 ### [Deployment and Local developement](#deployment-and-local-development)
 * [Heroku Deployment](#heroku-deployment)
+* [Amazon AWS](#amazon-aws)
 * [Local Developement](#local-development)
 ### [References](#references-1)
 * [Credits](#credits)
@@ -522,16 +523,22 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 ### Search Engine Optimization(SEO)
 
+#### Keywords
+
 * I created a list of keywords that would increase the SEO of the website and put them in the keywords meta tag in base.html.
 * I added some of the keywords in the descriptions of the products on the website.
 
 ![Meta Keywords](documentation/screenshots/marketing/meta_keywords.png)
+
+#### sitemap.xml file
 
 * [XML Sitemaps Generator](https://www.xml-sitemaps.com) was used to generate a sitemap.xml file for the website.
 * The sitemap.xml helps search engines crawl or navigate through a website's important page urls.
 * It helps search engines understand a website’s structure.
 
 ![sitemap.xml image](documentation/screenshots/marketing/sitemap.xml_image.png)
+
+#### robots.txt file
 
 * I also added a robots.txt file to the website.
 * The robots.txt file tells search engines where they are not allowed to go on a website.
@@ -552,7 +559,10 @@ I created a Facebook Business page to promote the website. There is a link to th
 
 ### Newsletter
 
-[Mailchimp](https://mailchimp.com/?currency=EUR) was used to add a newsletter sign-up form to the footer of the website.
+* [Mailchimp](https://mailchimp.com/?currency=EUR) was used to add a newsletter sign-up form to the footer of the website.
+* This is a way for users to learn about promotions and current offers.
+
+![Newsletter Form](documentation/screenshots/marketing/newsletter_form.png)
 
 [Back to Top](#electric-kitchens)
 
@@ -596,19 +606,134 @@ The website was deployed using [Heroku](https://www.heroku.com/) through the fol
 3. Enter a unique name for the application and select the region you are in.
 4. Click on "create app".
 5. Navigate to the settings tab and locate the "Config Vars" section and click "Reveal config vars".
-6. To add a config var:
-   * In the "KEY" field - enter the KEY name in all capital letters.
-   * In the "VALUE" field - enter the actual key and click "Add".
-8. Scroll to the "Buildpacks" section and click "Add buildpack".
-9. Select Python and save changes.
-12. Navigate to the "Deploy" section by clicking the "Deploy" tab in the top navbar.
-13. Select "GitHub" as the deployment method and click "Connect to GitHub".
-14. Search for the GitHub repository name in the search bar.
-15. Click on "connect" to link the repository to Heroku.
-16. Scroll down and click on "Deploy Branch".
-17. Once the app is deployed, Heroku will notify you and provide a button to view the app.
+6. Add the following Config Vars:
+         | Key | Value |
+         | :-: | :---: |
+         | AWS_ACCESS_KEY_ID | user's own value |
+         | AWS_SECRET_ACCESS_KEY | user's own value |
+         | DATABASE_URL | user's own value |
+         | DISABLE_COLLECTSTATIC | 1 (this is temporary) |
+         | EMAIL_HOST_PASS | user's own value |
+         | EMAIL_HOST_USER | user's own value |
+         | SECRET_KEY | user's own value |
+         | STRIPE_PUBLIC_KEY | user's own value |
+         | STRIPE_SECRET_KEY | user's own value |
+         | STRIPE_WH_SECRET | user's own value |
+         | USE_AWS | True |
+
+7. Navigate to the "Deploy" section by clicking the "Deploy" tab in the top navbar.
+8. Select "GitHub" as the deployment method and click "Connect to GitHub".
+9. Search for the GitHub repository name in the search bar.
+10. Click on "connect" to link the repository to Heroku.
+11. Scroll down and click on "Deploy Branch".
+12. Once the app is deployed, Heroku will notify you and provide a button to view the app.
 
 Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live link.
+
+### Amazon AWS
+
+#### AWS Bucket Creation
+* All static and media files in this project are stored in Amazon Web Services S3 bucket which is a cloud based storage service. * You can create your own bucket by following these steps:
+
+1. Go to Amazon Web Service website and click on Create An AWS Account, or login if you already have an account.
+2. Login to your new account, go to AWS Management Console and find service S3. 
+3. Click on Create Bucket.
+4. Give it a name (I recommend naming your bucket to match the Heroku app name), and choose region closest to you.
+5. In Object Ownership section, choose ACLS enabled. and Bucket Owner Preferred.
+6. Uncheck box 'Block All Public Access'.
+7. Check box 'I acknowledge that the current settings might result in this bucket and the objects within becoming public.'
+8. Click on Create Bucket, and your bucket is created.
+9. Click on your newly created bucket, and navigate to the Properties tab. 
+10. Scroll down to the bottom until you find Static Website Hosting. 
+11. Click on Edit, then enable.
+12. Hosting type: choose Host a Static Website
+13. Index document: index.html
+14. Error document: error.html
+15. Click on Save Changes.
+16. Navigate to the Permissions tab.
+17. Scroll down to the bottom until you find Cross-origin resource sharing (CORS).
+18. Click on Edit, and paste in this CORS Configuration below, which is going to set up the required access between the Heroku app and this S3 bucket. 
+19. Click on Save Changes.
+
+[
+   {
+      "AllowedHeaders": [
+         "Authorization"
+      ],
+      "AllowedMethods": [
+         "GET"
+      ],
+      "AllowedOrigins": [
+         "*"
+      ],
+      "ExposeHeaders": []
+   }
+]
+
+20. Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
+21. Select Type of Policy: choose S3 Bucket Policy
+22. Effect: choose Allow
+23. Principal: *
+24. Actions: select GetObject
+25. Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
+26. Click on the Add Statement and then Generate Policy. 
+27. Copy the policy and paste in the bucket policy editor.
+28. Add a slash star on to the end of the resource key (because we want to allow access to all resources in this bucket).
+29. Click Save.
+30. The resource key should look like this: "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*",  
+31. Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
+
+#### IAM(Identity and Access Management)
+
+Back on the AWS Services Menu, search for and open IAM. Once on the IAM page, follow these steps:
+
+1. From User Groups, click Create New Group.
+2. Tags are optional, but you must click it to get to the review policy page.
+3. From User Groups, select your newly created group, and go to the Permissions tab.
+4. Open the Add Permissions dropdown, and click Attach Policies.
+5. Select the policy, then click Add Permissions at the bottom when finished.
+6. From the JSON tab, select the Import Managed Policy link.
+7. Search for S3, select the AmazonS3FullAccess policy, and then Import.
+
+You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+ {
+ 	"Version": "2012-10-17",
+ 	"Statement": [
+ 		{
+ 			"Effect": "Allow",
+ 			"Action": "s3:*",
+ 			"Resource": [
+ 				"arn:aws:s3:::your-bucket-name",
+ 				"arn:aws:s3:::your-bucket-name/*"
+ 			]
+ 		}
+ 	]
+ }
+
+8. Click Review Policy.
+9. Provide a description:
+10. Click Create Policy.
+11. From User Groups, click your "group-retro-reboot".
+12. Click Attach Policy.
+13. Search for the policy you've just created and select it, then Attach Policy.
+14. From User Groups, click Add User.
+15. For "Select AWS Access Type", select Programmatic Access.
+16. Select the group to add your new user to.
+17. Tags are optional, but you must click it to get to the review user page.
+18. Click Create User once done.
+19. You should see a button to Download .csv, so click it to save a copy on your system.
+  * IMPORTANT: once you pass this page, you cannot come back to download it again, so do it immediately!
+  * This contains the user's Access key ID and Secret access key.
+  * AWS_ACCESS_KEY_ID = Access key ID
+  * AWS_SECRET_ACCESS_KEY = Secret access key
+
+#### Final AWS Setup
+* If Heroku Config Vars has DISABLE_COLLECTSTATIC still, this can be removed now, so that AWS will handle the static files.
+* Back within S3, create a new folder called: media.
+* Select any existing media images for your project to prepare them for being uploaded into the new folder.
+* Under Manage Public Permissions, select Grant public read access to this object(s).
+* No further settings are required, so click Upload.
 
 ### Local Development
 
