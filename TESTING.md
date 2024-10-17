@@ -345,16 +345,16 @@ Click [here](README.md) to return to the readme file.
 ### Bugs
 
 #### Fixed Bugs
-| Location | Bug | Solution | Result |
-| :------: | :-: | :------: | :----: |
-| Product Detail Page | User able to delete quantity and click Add to Bag | Validate if quantity is null | Pass |
-| Shopping Bag Page | User able to delete quantity and click Add to Bag | Validate if quantity is null | Pass |
-| Shopping Bag Page | Minus button not disabled on large screens | Add data-item-id | Pass |
-| Add Review Page | User able to choose a future date | Validate if date is in future | Pass |
-| Stripe Webhook handler | Payment_intent_succeeded not working | import Stripe | Pass |
-| Checkout Page | Order Confirmation not sending to user's email | Add runtime.txt | Pass |
-| Product Detail Page | Add to Bag button crashing site | Remove extra form closing tag | Pass |
-| Navbar | Navbar toggler not working | Remove extra div closing tag | Pass |
+| Location | Bug | Solution |
+| :------: | :-: | :------: |
+| Product Detail Page | User able to delete quantity and click Add to Bag | Validate if quantity is null |
+| Shopping Bag Page | User able to delete quantity and click Add to Bag | Validate if quantity is null |
+| Shopping Bag Page | Minus button not disabled on large screens | Add data-item-id |
+| Add Review Page | User able to choose a future date | Validate if date is in future |
+| Stripe Webhook handler | Payment_intent_succeeded not working | import Stripe |
+| Checkout Page | Order Confirmation not sending to user's email | Add runtime.txt |
+| Product Detail Page | Add to Bag button crashing site | Remove extra form closing tag |
+| Navbar | Navbar toggler not working | Remove extra div closing tag |
 
 #### Unfixed Bugs
 * There are no unfixed bugs.

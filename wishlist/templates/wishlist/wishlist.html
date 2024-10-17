@@ -82,7 +82,7 @@
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td>
-                                        <a href="{% url 'remove_from_wishlist' item.product.id %}" class="btn btn-danger">
+                                        <a href="{% url 'remove_from_wishlist' item.product.id %}" class="btn btn-danger rounded-0">
                                             <span>Remove From Wishlist</span>
                                         </a>
                                     </td>
@@ -90,7 +90,7 @@
                             {% endfor %}
                                 <tr>
                                     <td colspan="4" class="text-center">
-                                        <a href="{% url 'products' %}" class="btn btn-info">
+                                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">
                                             <span>Return to Products Page</span>
                                         </a>
                                     </td>
