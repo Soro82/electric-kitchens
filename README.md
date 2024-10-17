@@ -316,28 +316,28 @@ I chose a professional color scheme for this website to make it stand out from o
 There are links to view only all the kettles, washing machines, air fryers and coffee machines.
 * There is a shopping cart icon which is a link to the Shopping Bag page.
 * There is a person icon which opens the My Account dropdown menu.
-* There is a banner informing customers of free delivery on all purhcases over $50.
+* There is a banner informing customers of free delivery on all purchases over $50.
 
 ![Navbar All Products Menu](documentation/screenshots/desktop/products_dropdown_desktop.png)
 
-##### Navbar(Logged Out)
+##### Navbar (Logged Out)
 
 * The My Account dropdown menu contains links to the login and register pages when the user is logged out.
 
-![Navbar(Logged Out)](documentation/screenshots/desktop/navbar_logged_out.png)
+![Navbar (Logged Out)](documentation/screenshots/desktop/navbar_logged_out.png)
 
-##### Navbar(Logged In)
+##### Navbar (Logged In)
 
 * The My Account dropdown menu contains links to the My Profile, My Reviews and Logout pages when the user is logged in.
 * There is a link to My Wishlist beside the My Account dropdown menu when the user is logged in.
 
-![Navbar(Logged In)](documentation/screenshots/desktop/navbar_logged_in.png)
+![Navbar (Logged In)](documentation/screenshots/desktop/navbar_logged_in.png)
 
-##### Navbar(Admin Logged In)
+##### Navbar (Admin Logged In)
 
 * There is an extra link in the My Account dropdown menu called Product Management when admin users are logged in.
 
-![Navbar(Logged In)](documentation/screenshots/desktop/navbar_logged_in_admin.png)
+![Navbar (Logged In)](documentation/screenshots/desktop/navbar_logged_in_admin.png)
 
 #### All Products Page
 
@@ -348,7 +348,7 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 ![All Products Page](documentation/screenshots/desktop/all_products_desktop.png)
 
-#### Product Details Page(Logged Out)
+#### Product Details Page (Logged Out)
 
 * There is a large image of the product and all the details of the product on this page.
 * The quantity box allows the user to choose the quantity of the product they wish to purchase.
@@ -358,29 +358,29 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * The Keep Shopping button allows the user to return to the All Products page.
 * The Add to Bag button allows the user to add the product to their shopping bag.
 
-![Product Details Page(Logged Out)](documentation/screenshots/desktop/product_detail_logged_out.png)
+![Product Details Page (Logged Out)](documentation/screenshots/desktop/product_detail_logged_out.png)
 
-#### Product Details Page(Logged In)
+#### Product Details Page (Logged In)
 
 * When the user is logged in, there are 2 more buttons under the Add to Bag button.
 * The Add to Wishlist button adds the product to the user's wishlist.
-* The Add Review button opens the Add Review page allowing the user to add a review for that product.
+* The Add Review button opens the Add Review page, allowing the user to add a review for that product.
 
-![Product Details Page(Logged In)](documentation/screenshots/desktop/product_detail_desktop.png)
+![Product Details Page (Logged In)](documentation/screenshots/desktop/product_detail_desktop.png)
 
-#### Product Details Page(Admin Logged In)
+#### Product Details Page (Admin Logged In)
 
 * When admin users are logged in, there are 2 extra buttons above the quantity box.
 * The Edit button opens the Edit Product page.
 * The Delete button will delete the product and all it's details from the website.
 
-![Product Details Page(Admin Logged In)](documentation/screenshots/desktop/product_detail_admin.png)
+![Product Details Page (Admin Logged In)](documentation/screenshots/desktop/product_detail_admin.png)
 
 #### Shopping Bag Page
 
 * The Shopping Bag Page lists the all the products the user has added to their shopping bag.
 * The page shows the image, product name, product price, quantity added and the subtotal for each product in the bag.
-* There are two button under the quantity box for each item in the bag.
+* There are two buttons under the quantity box for each item in the bag.
 * The Update button allows the user to change the quantity for that item.
 * When they click on the Update button the subtotal will also change.
 * The Remove button allows the user to remove that item from their shopping bag.
@@ -423,6 +423,13 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 ![Order Confirmation Page](documentation/screenshots/desktop/order_confirmation.png)
 
+#### Order Confirmation Email
+
+* An Order Confirmation Email is sent to the user after every purchase is complete.
+* This shows the order details, the address the products will be delivered to and the total cost.
+
+![Order Confirmation Email](documentation/screenshots/confirmation_email.png)
+
 #### My Profile Page
 
 * The My Profile page contains input fields for the user to enter their delivery information.
@@ -437,8 +444,8 @@ There are links to view only all the kettles, washing machines, air fryers and c
 #### Add Review Page
 
 * The product image and product description are displayed at the top of the page.
-* There is a large textbox allowing the user the enter the details of their review.
-* Underneath are three dropdowm menu boxes allowing the user to choose from five options.
+* There is a large textbox allowing the user to enter the details of their review.
+* Underneath are three dropdown menu boxes allowing the user to choose from five options.
 * The user can choose from 1 to 5 on how they rate the product, how easy it is to use and the energy rating of the product.
 * The Date of Purchase box is optional. There is also validation on it to ensure the user chooses a previous date.
 * The Cancel button will return the user to the All Products page.
@@ -452,8 +459,8 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 * The My Reviews page contains four columns for each review.
 * The product's name and image.
-* The user's review and the purchase date if applicable.
-* The options the user chose for the product's rating, ease of use and energy efficency.
+* The user's review and the purchase date, if applicable.
+* The options the user chose for the product's rating, ease of use and energy efficiency.
 * A Remove button allowing the user to review this review.
 * At the bottom of the page there is a button allowing the user to return to the All Products page.
 
@@ -472,7 +479,7 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * When the admin user clicks on Product Management in the My Account dropdown menu it opens the Product Management Page.
 * The Product Management Page contains a form allowing the admin user to add products to the website.
 * The form contains a dropdown menu containing all the product categories.
-* All compulsory fields have an asterix beside the fields label name.
+* All compulsory fields have an asterix beside the field's label name.
 * There is a button under the "Image Url" field allowing the user to upload an image for the product.
 * The Cancel button will return the user to the All Products page.
 * The Add Product button will add the product to the website.
@@ -543,7 +550,7 @@ There are links to view only all the kettles, washing machines, air fryers and c
 * I also added a robots.txt file to the website.
 * The robots.txt file tells search engines where they are not allowed to go on a website.
 * It lists out any folders or files that will not be crawled or indexed by search engine spiders.
-* Having a robots.txt file shows that you acknowledge that search engines are allowed on your site and that they may have free access to it. As a result it will improve the website’s SEO ranking.
+* Having a robots.txt file shows that you acknowledge that search engines are allowed on your site and that they may have free access to it. As a result, it will improve the website’s SEO ranking.
 
 ![robots.txt image](documentation/screenshots/marketing/robots.txt_image.png)
 
@@ -683,7 +690,7 @@ Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live 
 30. The resource key should look like this: "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*",  
 31. Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
 
-#### IAM(Identity and Access Management)
+#### IAM (Identity and Access Management)
 
 Back on the AWS Services Menu, search for and open IAM. Once on the IAM page, follow these steps:
 
