@@ -35,6 +35,7 @@ The purpose of this site is to allow users to purchase electric kitchen applianc
 ### [Technologies Used](#technologies-used-1)
 * [Languages Used](#languages-used)
 * [Frameworks Used](#frameworks-used)
+* [Database](#database)
 * [Programs Used](#programs-used)
 ### [Testing](#testing-1)
 ### [Deployment and Local developement](#deployment-and-local-development)
@@ -592,6 +593,9 @@ I created a Facebook Business page to promote the website. There is a link to th
 * Django - https://www.djangoproject.com
 * Bootstrap v4.1 - https://getbootstrap.com
 
+### Database
+PostgreSQL from Code Institute was used to create the database for this website.
+
 ### Programs Used
 * GitHub - to host the source code.
 * GitPod - IDE used to develop the website.
@@ -644,6 +648,36 @@ The website was deployed using [Heroku](https://www.heroku.com/) through the fol
 12. Once the app is deployed, Heroku will notify you and provide a button to view the app.
 
 Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live link.
+
+### Database Creation
+
+1. Navigate to PostgreSQL from Code Institute.
+2. Enter your student email address in the input field provided.
+3. Click Submit.
+4. Wait while the database is created.
+5. Your database is successfully created! The link has been emailed to the email address you provided.
+
+#### Connect Your Database
+1. In the terminal, install dj_database_url and psycopg2, both of these are needed to connect to your external database.
+    pip3 install dj_database_url==0.5.0 psycopg2
+2.  pip freeze > requirements.txt
+3. In your settings.py file, import dj_database_url underneath the import for os.
+4. Scroll to the DATABASES section and comment out the current code so that we connect to the new database instead. Paste in the database URL from your PostgreSQL from Code Institute email in the position indicated.
+    * DATABASES = {
+    *  'default': dj_database_url.parse('your-database-url-here')
+    * }
+5. IMPORTANT: Do not commit until these steps are complete.
+6. In the terminal, run the showmigrations command to confirm you are connected to the external database.
+    * python3 manage.py showmigrations
+7. If you are, you should see a list of all migrations, but none of them are checked off.
+8. Migrate your database models to your new database.
+    * python3 manage.py migrate
+9. Load in the fixtures. Please note the order is very important here. We need to load categories first.
+    * python3 manage.py loaddata categories
+10. Then products, as the products require a category to be set.
+11. Create a superuser for your new database
+    * python3 manage.py createsuperuser
+12. Finally, to prevent exposing our database when we push to GitHub, we will delete it again. Undo everything in step 4 (delete the code and uncomment out the original code.)
 
 ### Amazon AWS
 
