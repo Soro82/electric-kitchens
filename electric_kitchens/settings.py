@@ -26,10 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if 'DEBUG' in os.environ:
-    DEBUG = 'DEVELOPMENT' in os.environ
-else:
-    DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
+
 
 ALLOWED_HOSTS = ['8000-soro82-electrickitchens-ovc4otfkvhj.ws.codeinstitute-ide.net', 'electric-kitchens-02035ecbc37c.herokuapp.com']
 
