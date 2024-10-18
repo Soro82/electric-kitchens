@@ -659,8 +659,9 @@ Click [here](https://electric-kitchens-02035ecbc37c.herokuapp.com) for the live 
 
 #### Connect Your Database
 1. In the terminal, install dj_database_url and psycopg2, both of these are needed to connect to your external database.
-    pip3 install dj_database_url==0.5.0 psycopg2
-2.  pip freeze > requirements.txt
+    * pip3 install dj_database_url==0.5.0 psycopg2
+2. Update your requirements.txt file with the newly installed packages. 
+    * pip freeze > requirements.txt
 3. In your settings.py file, import dj_database_url underneath the import for os.
 4. Scroll to the DATABASES section and comment out the current code so that we connect to the new database instead. Paste in the database URL from your PostgreSQL from Code Institute email in the position indicated.
     * DATABASES = {
