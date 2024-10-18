@@ -534,6 +534,9 @@ There are links to view only all the kettles, washing machines, air fryers and c
 
 [Back to Top](#electric-kitchens)
 
+## Business Model
+The website is a "Business to Customer" or B2C model as it sell products to individual customers and takes single payments. It is designed to make it easy for both registered and unregistered users to pay for purchases, with additional features available to registered users and newsletter subscribers. Users have the ability to search for products or sort the products on different criteria. 
+
 ## Marketing
 
 ### Search Engine Optimization(SEO)
