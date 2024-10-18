@@ -205,6 +205,10 @@ Each user has the ability to:
 
 ![Color Palette](documentation/images/electric_kitchens_color_palette.png)
 
+### Typography
+
+The Lato font family was used for this project. Classical proportions, particularly in the uppercase, give the letterforms familiar harmony and elegance, and combine with a sleek treatement that feels contemporary without being trendy. Semi-rounded details feel warm, while the underlying structure provides stability and seriousness.
+
 ### Wireframes
 <details>
 <summary>Home Page</summary>
@@ -747,6 +751,7 @@ Forking is a way to make a copy of the original repository on your GitHub accoun
 ## References
 
 ### Credits
+* The website was based on Code Institute's Boutique Ado walkthrough project.
 * All the images of the products were downloaded from https://www.amazon.co.uk
 * All the product details were copied from https://www.amazon.co.uk
 * The images were resized and converted using https://www.resizepixel.com
