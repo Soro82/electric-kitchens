@@ -617,6 +617,7 @@ The website was deployed using [Heroku](https://www.heroku.com/) through the fol
 4. Click on "create app".
 5. Navigate to the settings tab and locate the "Config Vars" section and click "Reveal config vars".
 6. Add the following Config Vars:
+
 | Key | Value |
 | :-: | :---: |
 | AWS_ACCESS_KEY_ID | user's own value |
